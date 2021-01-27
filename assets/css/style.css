@@ -31,21 +31,21 @@ table {
   left: 0;
   position: absolute;
   top: 0;
-  width: 440px;
+  width: 60%;
   z-index: 1;
 }
 
 #map {
   margin-top: 40px;
-  width: 440px;
+  width: 60%;
 }
 
 #listing {
   position: absolute;
-  width: 200px;
+  width: 90%;
   height: 470px;
   overflow: auto;
-  left: 442px;
+  left: 62%;
   top: 0px;
   cursor: pointer;
   overflow-x: hidden;
@@ -89,7 +89,7 @@ table {
 
 #resultsTable {
   border-collapse: collapse;
-  width: 240px;
+  width: 40%;
 }
 
 #rating {
