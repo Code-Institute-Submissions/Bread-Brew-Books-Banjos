@@ -3,7 +3,20 @@ let places;
 let infoWindow;
 let markers = [];
 let autocomplete;
+let selection = [];
 const countryRestrict = { country: "ie" };
+
+//Add type to selection or remove if selected already//
+function addTypeToSelection () {
+    let selectedType = 
+    selection.push(selectedType)
+}
+
+addEventListener("click", addTypeToSelection)
+
+let types = document.querySelectorAll(".selected-cat")
+types.forEach(element => element.addEventListener("click",)); 
+
 
 //Marker
 const MARKER_PATH =
@@ -75,6 +88,8 @@ const countries = {
   },
 };
 
+
+
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     zoom: countries["ie"].zoom,
@@ -122,7 +137,7 @@ function onPlaceChanged() {
 function search() {
   const search = {
     bounds: map.getBounds(),
-    types: ["bakery"],
+    types: selection,
   };
   places.nearbySearch(search, (results, status, pagination) => {
     if (status === google.maps.places.PlacesServiceStatus.OK) {
