@@ -51,44 +51,44 @@ all: {
     zoom: 6,
   },
   mx: {
-    center: { lat: 23.6, lng: -102.5 },
-    zoom: 4,
+    center: { lat: 10.6, lng: -102.5 },
+    zoom: 5,
+  },
+    nz: {
+    center: { lat: -42.9, lng: 173 },
+    zoom: 6,
   },
   ng: {
     center:  { lat: 9.1, lng: 8.8},
     zoom: 6.5,
-  },
-  nz: {
-    center: { lat: -40.9, lng: 174.9 },
-    zoom: 5,
   },
   ie: {
     center: { lat: 53.1, lng: -7.95 },
     zoom: 7.5,
   },
   it: {
-    center: { lat: 41.9, lng: 12.6 },
-    zoom: 5,
+    center: { lat: 40, lng: 12.6 },
+    zoom: 6.4,
   },
   za: {
     center: { lat: -30.6, lng: 22.9 },
-    zoom: 5,
+    zoom: 5.8,
   },
   es: {
-    center: { lat: 40.5, lng: -3.7 },
-    zoom: 5,
-  },
-  pt: {
-    center: { lat: 39.4, lng: -8.2 },
+    center: { lat: 35.5, lng: -3.7 },
     zoom: 6,
   },
+  pt: {
+    center: { lat: 39.4, lng: -8 },
+    zoom: 7.2,
+  },
   us: {
-    center: { lat: 37.1, lng: -95.7 },
-    zoom: 3,
+    center: { lat: 22.1, lng: -90.7 },
+    zoom: 4.1,
   },
   uk: {
-    center: { lat: 54.8, lng: -4.6 },
-    zoom: 5,
+    center: { lat: 54.2, lng: -2.6 },
+    zoom: 6.5,
   },
 };
 
