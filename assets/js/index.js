@@ -4,7 +4,7 @@ let infoWindow;
 let markers = [];
 let autocomplete;
 let selection = [];
-const countryRestrict = { country: "ie" };
+const countryRestrict = { country: "all" };
 
 //Add type to selection or remove if selected already//
 function addTypeToSelection () {
@@ -26,6 +26,10 @@ const hostnameRegexp = new RegExp("^https?://.+?/");
 
 //Country List
 const countries = {
+all: {
+    center: {lat: 15, lng: -25 },
+    zoom: 2.5,
+},
   au: {
     center: { lat: -25.3, lng: 133.8 },
     zoom: 4.4,
@@ -35,16 +39,16 @@ const countries = {
     zoom: 4.5,
   },
   ca: {
-    center: { lat: 62, lng: -110.0 },
-    zoom: 3,
+    center: { lat: 50, lng: -100.0 },
+    zoom: 4,
   },
   fr: {
     center: { lat: 46.2, lng: 2.2 },
-    zoom: 5,
+    zoom: 6,
   },
   de: {
-    center: { lat: 51.2, lng: 10.4 },
-    zoom: 5,
+    center: { lat: 50, lng: 10.4 },
+    zoom: 6,
   },
   mx: {
     center: { lat: 23.6, lng: -102.5 },
@@ -92,8 +96,8 @@ const countries = {
 
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
-    zoom: countries["ie"].zoom,
-    center: countries["ie"].center,
+    zoom: countries["all"].zoom,
+    center: countries["all"].center,
     mapTypeControl: false,
     panControl: false,
     zoomControl: false,
@@ -182,8 +186,8 @@ function setAutocompleteCountry() {
 
   if (country == "all") {
     autocomplete.setComponentRestrictions({ country: [] });
-    map.setCenter({ lat: 15, lng: 0 });
-    map.setZoom(2);
+    map.setCenter({ lat: 15, lng: -25 });
+    map.setZoom(2.5);
   } else {
     autocomplete.setComponentRestrictions({ country: country });
     map.setCenter(countries[country].center);
