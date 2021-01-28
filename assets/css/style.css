@@ -45,6 +45,7 @@ table {
 #listing {
   position: absolute;
 /* ! Width should be 40% - fix styling, essentially a div issue one level up*/
+  font-size: 1.2em;
   width: 60%;
   height: 100%;
   overflow: auto;
@@ -73,10 +74,12 @@ table {
 
 #autocomplete {
   width: 100%;
+  font-size: 1em;
 }
 
 #country {
-  width: 100%;
+    width: 100%;
+    font-size: 1em;
 }
 
 .placeIcon {

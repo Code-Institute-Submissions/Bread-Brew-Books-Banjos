@@ -2,3 +2,6 @@
 
 
 need to adjust countries and categories
+set defaults to ireland
+expand country default locations
+add country maps
