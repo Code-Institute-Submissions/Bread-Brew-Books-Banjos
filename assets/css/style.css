@@ -1,12 +1,5 @@
-/* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-#map {
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-}
 
-/* Optional: Makes the sample page fill the window. */
+
 html,
 body {
   height: 100vh;
@@ -15,12 +8,7 @@ body {
 }
 
 .feature {
-padding: 10px;}
-
-
-.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-    background-color: #8064A2 !important;
-    font-size: 1.75m !important;
+margin: 10px;
 }
 
 
@@ -45,7 +33,10 @@ table {
 }
 
 #map {
-  margin-top: 40px;
+      height: 100%;
+  position: absolute;
+  overflow: hidden;
+  margin-top: 60px;
   width: 60%;
 }
 
