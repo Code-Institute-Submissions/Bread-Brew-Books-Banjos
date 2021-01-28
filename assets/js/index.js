@@ -7,6 +7,7 @@ const countryRestrict = { country: "ie" };
 
 //Marker
 const MARKER_PATH =
+
   "https://developers.google.com/maps/documentation/javascript/images/marker_green";
 const hostnameRegexp = new RegExp("^https?://.+?/");
 
