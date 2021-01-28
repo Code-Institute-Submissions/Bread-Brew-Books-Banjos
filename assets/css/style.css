@@ -14,8 +14,8 @@ body {
   padding: 0;
 }
 
-body {
-  padding: 0 !important;
+.header {
+    height: 6em;
 }
 
 table {
