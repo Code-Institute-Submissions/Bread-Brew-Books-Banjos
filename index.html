@@ -15,12 +15,27 @@
   <body>
 
   <div class="container-fluid">
-    <div class="row header">
+    <div class="row ">
         <h3>Browse the Best</h3>
-<button type="button" class="btn btn-primary btn-lg">Bread</button>
-<button type="button" class="btn btn-secondary btn-lg">Books</button>
-<button type="button" class="btn btn-primary btn-lg">Banjos</button>
-<button type="button" class="btn btn-secondary btn-lg">Brew</button>
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+  <label class="btn btn-secondary btn-bread">
+    <input type="radio" name="options" id="bread" autocomplete="off"> Bread
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="books" autocomplete="off"> Books
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="brew" autocomplete="off"> Brew
+  </label>
+    <label class="btn btn-secondary">
+    <input type="radio" name="options" id="banjos" autocomplete="off"> Banjos
+  </label>
+</div>
+<!--
+<button type="button" class="btn btn-bread btn-lg">Bread</button>
+<button type="button" class="btn btn-books btn-lg">Books</button>
+<button type="button" class="btn btn-banjos btn-lg">Banjos</button>
+<button type="button" class="btn btn-brew btn-lg">Brew</button>-->
         <div id="map"></div>
         <div id="listing">
         <div class="bread-search">

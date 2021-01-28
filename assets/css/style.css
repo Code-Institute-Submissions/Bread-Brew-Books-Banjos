@@ -14,13 +14,20 @@ body {
   padding: 0;
 }
 
-.header {
+.mainmenu{
     height: 6em;
 }
+
+
+.btn-bread {
+    font-size: 1.75em;
+}
+
 
 table {
   font-size: 18px;
 }
+
 
 .bread-search {
   -webkit-box-align: center;
