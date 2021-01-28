@@ -3,7 +3,7 @@ let places;
 let infoWindow;
 let markers = [];
 let autocomplete;
-const countryRestrict = { country: "us" };
+const countryRestrict = { country: "ie" };
 
 //Marker
 const MARKER_PATH =
