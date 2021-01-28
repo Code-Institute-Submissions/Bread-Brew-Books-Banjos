@@ -129,3 +129,9 @@ margin-top: 62px;
 .iw_table_icon {
   text-align: right;
 }
+
+/* Auto complete form */
+.pac-container {
+    border-color: #00c3ff;
+    background-color: #aafcff;
+}
