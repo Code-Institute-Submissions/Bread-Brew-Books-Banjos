@@ -37,6 +37,10 @@ const countries = {
     center: { lat: 23.6, lng: -102.5 },
     zoom: 4,
   },
+  ng: {
+    center:  { lat: 9.1, lng: 8.8},
+    zoom: 6.5,
+  },
   nz: {
     center: { lat: -40.9, lng: 174.9 },
     zoom: 5,
