@@ -15,11 +15,11 @@ const hostnameRegexp = new RegExp("^https?://.+?/");
 const countries = {
   au: {
     center: { lat: -25.3, lng: 133.8 },
-    zoom: 4,
+    zoom: 4.4,
   },
   br: {
-    center: { lat: -14.2, lng: -51.9 },
-    zoom: 3,
+    center: { lat: -25, lng: -56.5 },
+    zoom: 4.5,
   },
   ca: {
     center: { lat: 62, lng: -110.0 },
