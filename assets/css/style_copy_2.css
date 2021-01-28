@@ -2,8 +2,6 @@
        * element that contains the map. */
 #map {
   height: 100%;
-  position: absolute;
-  overflow: hidden;
 }
 
 /* Optional: Makes the sample page fill the window. */
@@ -19,7 +17,7 @@ body {
 }
 
 table {
-  font-size: 18px;
+  font-size: 12px;
 }
 
 .bread-search {
@@ -44,9 +42,8 @@ table {
 
 #listing {
   position: absolute;
-/* ! Width should be 40% - fix styling, essentially a div issue one level up*/
-  width: 60%;
-  height: 100%;
+  width: 90%;
+  height: 470px;
   overflow: auto;
   left: 62%;
   top: 0px;
@@ -55,7 +52,7 @@ table {
 }
 
 #findbread {
-  font-size: 24px;
+  font-size: 14px;
 }
 
 #locationField {
@@ -91,9 +88,8 @@ table {
 }
 
 #resultsTable {
-/* ! Width should be 40% - fix styling, essentially a div issue one level up*/
   border-collapse: collapse;
-  width: 60%;
+  width: 40%;
 }
 
 #rating {

@@ -41,7 +41,7 @@ const countries = {
     zoom: 5,
   },
   ie: {
-    center: { lat: 53.8, lng: -7.8 },
+    center: { lat: 53.1, lng: -7.95 },
     zoom: 7.5,
   },
   it: {
