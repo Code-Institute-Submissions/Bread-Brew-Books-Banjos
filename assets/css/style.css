@@ -18,7 +18,9 @@ table {
 
 .b4main {
     font-weight: 800;
-line-height: 175%;}
+line-height: 175%;
+display: contents;
+}
 
 .btn-main {
     margin-left: 4px!important;
