@@ -40,7 +40,7 @@ const countries = {
     center: { lat: -40.9, lng: 174.9 },
     zoom: 5,
   },
-  ir: {
+  ie: {
     center: { lat: 53.8, lng: -7.8 },
     zoom: 7.5,
   },
@@ -72,8 +72,8 @@ const countries = {
 
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
-    zoom: countries["ir"].zoom,
-    center: countries["ir"].center,
+    zoom: countries["ie"].zoom,
+    center: countries["ie"].center,
     mapTypeControl: false,
     panControl: false,
     zoomControl: false,
