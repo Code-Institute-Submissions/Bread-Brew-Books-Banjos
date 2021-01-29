@@ -58,9 +58,9 @@ all: {
     center: { lat: -42.9, lng: 173 },
     zoom: 6,
   },
-  ng: {
+    ng: {
     center:  { lat: 9.1, lng: 8.8},
-    zoom: 6.5,
+    zoom: 6.2,
   },
   ie: {
     center: { lat: 53.1, lng: -7.95 },
