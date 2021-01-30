@@ -315,12 +315,15 @@ function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     zoom: countries["all"].zoom,
     center: countries["all"].center,
-    mapTypeControl: false,
-    panControl: false,
-    zoomControl: false,
-    streetViewControl: false,
-
+  //mapTypeControl: false,
+   // panControl: false,
+    //zoomControl: false,
+    //streetViewControl: false,
+    //mapTypeId: "satellite",
   });
+    //map.setTilt(45);
+
+
   infoWindow = new google.maps.InfoWindow({
     content: document.getElementById("info-content"),
   });
