@@ -7,8 +7,8 @@ body {
 
 .feature {
 margin: 10px;
+display: contents;
 }
-
 
 table {
   font-size: 21px;
@@ -45,7 +45,7 @@ display: contents;
   height: 100%;
   position: absolute;
   overflow: hidden;
-  margin-top: 60px;
+  margin-top: 8px;
   width: 60%;
 }
 
