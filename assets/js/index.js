@@ -224,8 +224,6 @@ var stylesArray = [
   }
 ]
 
-
-
 //Add type to selection or remove if selected already//
 function addTypeToSelection () {
     let selectedType = 
@@ -321,6 +319,8 @@ function initMap() {
     panControl: false,
     zoomControl: false,
     streetViewControl: false,
+     mapId: "8e0a97af9386fef",
+
   });
   infoWindow = new google.maps.InfoWindow({
     content: document.getElementById("info-content"),
@@ -356,7 +356,7 @@ function onPlaceChanged() {
   }
 }
 
-// Search for hotels in the selected city, within the viewport of the map.
+// Search for selected-cat in the selected city, within the viewport of the map.
 function search() {
   const search = {
     bounds: map.getBounds(),
