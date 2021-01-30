@@ -8,7 +8,7 @@ const countryRestrict = { country: "all" };
 
 // Add styles //
 
-var stylesArray = [
+/*var stylesArray = [
   {
     "elementType": "geometry",
     "stylers": [
@@ -222,7 +222,7 @@ var stylesArray = [
       }
     ]
   }
-]
+]*/
 
 //Add type to selection or remove if selected already//
 function addTypeToSelection () {
@@ -319,7 +319,6 @@ function initMap() {
     panControl: false,
     zoomControl: false,
     streetViewControl: false,
-     mapId: "8e0a97af9386fef",
 
   });
   infoWindow = new google.maps.InfoWindow({

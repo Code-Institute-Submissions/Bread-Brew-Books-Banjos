@@ -130,8 +130,12 @@ margin-top: 62px;
   text-align: right;
 }
 
+.iw_photo_image {
+  height: 100%;
+}
+
 /* Auto complete form */
 .pac-container {
-    border-color: #00c3ff;
-    background-color: #aafcff;
+    border-color: #aeecff;
+    background-color: #dff6ff;
 }
