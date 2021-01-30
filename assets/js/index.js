@@ -366,7 +366,7 @@ function search() {
       clearResults();
       clearMarkers();
 
-      // Create a marker for each hotel found, and
+      // Create a marker for each result found, and
       // assign a letter of the alphabetic to each marker icon.
       for (let i = 0; i < results.length; i++) {
         const markerLetter = String.fromCharCode("A".charCodeAt(0) + (i % 26));
@@ -377,7 +377,7 @@ function search() {
           animation: google.maps.Animation.DROP,
           icon: markerIcon,
         });
-        // If the user clicks a hotel marker, show the details of that hotel
+        // If the user clicks a marker, show the details of that result
         // in an info window.
         markers[i].placeResult = results[i];
         google.maps.event.addListener(markers[i], "click", showInfoWindow);
@@ -453,8 +453,8 @@ function clearResults() {
   }
 }
 
-// Get the place details for a hotel. Show the information in an info window,
-// anchored on the marker for the hotel that the user selected.
+// Get the place details for a result. Show the information in an info window,
+// anchored on the marker for the result that the user selected.
 function showInfoWindow() {
   const marker = this;
   places.getDetails(
@@ -472,7 +472,7 @@ function showInfoWindow() {
 // Load the place information into the HTML elements used by the info window.
 function buildIWContent(place) {
   document.getElementById("iw-icon").innerHTML =
-    '<img class="breadIcon" ' + 'src="' + place.icon + '"/>';
+    '<img class="resultIcon" ' + 'src="' + place.icon + '"/>';
   document.getElementById("iw-url").innerHTML =
     '<b><a href="' + place.url + '">' + place.name + "</a></b>";
   document.getElementById("iw-address").textContent = place.vicinity;
@@ -485,8 +485,8 @@ function buildIWContent(place) {
     document.getElementById("iw-phone-row").style.display = "none";
   }
 
-  // Assign a five-star rating to the hotel, using a black star ('&#10029;')
-  // to indicate the rating the hotel has earned, and a white star ('&#10025;')
+  // Assign a five-star rating to the result, using a black star ('&#10029;')
+  // to indicate the rating the result has earned, and a white star ('&#10025;')
   // for the rating points not achieved.
   if (place.rating) {
     let ratingHtml = "";
