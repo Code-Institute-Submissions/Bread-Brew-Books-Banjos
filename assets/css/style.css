@@ -37,7 +37,7 @@ display: contents;
   left: 0;
   position: absolute;
   top: 0;
-  width: 60%;
+  width: 90%;
   z-index: 1;
 }
 
@@ -110,7 +110,7 @@ display: contents;
 #resultsTable {
 /* ! Width should be 40% - fix styling, essentially a div issue one level up*/
   border-collapse: collapse;
-  width: 60%;
+  width: 100%;
 margin-top: 62px;
 
 }
