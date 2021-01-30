@@ -4,6 +4,7 @@ let infoWindow;
 let markers = [];
 let autocomplete;
 let selection = [];
+const countryRestrict = { country: "all" };
 
 // Add styles //
 
