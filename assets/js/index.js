@@ -226,20 +226,18 @@ const countryRestrict = { country: "all" };
 
 //Add type to selection or remove if selected already//
 function addTypeToSelection () {
-    let selectedType = 
+    let selectedType = ["book_store"]
     selection.push(selectedType)
 }
 
-addEventListener("click", addTypeToSelection)
+addEventListener("click", addTypeToSelection);
 
-let types = document.querySelectorAll(".selected-cat")
-types.forEach(element => element.addEventListener("click",)); 
-
+let types = document.querySelectorAll("selected-cat");
+types.forEach(element => element.addEventListener("click",));
 
 //Marker
 const MARKER_PATH =
-
-  "https://developers.google.com/maps/documentation/javascript/images/marker_green";
+    "https://developers.google.com/maps/documentation/javascript/images/marker_green";
 const hostnameRegexp = new RegExp("^https?://.+?/");
 
 //Country List

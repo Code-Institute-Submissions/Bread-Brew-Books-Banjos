@@ -12,5 +12,7 @@ set defaults to ireland
 expand country default locations
 add country maps
 
+TESTING - hardcoded the Google Place keywords to determine they were correctly displaying by searching and checking that the returns represented the type used
+
 
 moved js to bottom of page and removed defer text
