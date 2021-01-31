@@ -226,7 +226,7 @@ const countryRestrict = { country: "all" };
 
 //Add type to selection or remove if selected already//
 function addTypeToSelection () {
-    let selectedType = ["book_store"]
+    let selectedType = "cafe";
     selection.push(selectedType)
 }
 
