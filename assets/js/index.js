@@ -226,14 +226,18 @@ const countryRestrict = { country: "all" };
 
 //Add type to selection or remove if selected already//
 function addTypeToSelection () {
-    let selectedType = "cafe";
+    let selectedType = document.getElementById("button").name;
+   /* let selectedType = "book_store";*/
     selection.push(selectedType)
+
 }
 
 addEventListener("click", addTypeToSelection);
 
 let types = document.querySelectorAll("selected-cat");
 types.forEach(element => element.addEventListener("click",));
+
+
 
 //Marker
 const MARKER_PATH =
