@@ -226,6 +226,10 @@ const countryRestrict = { country: "all" };
 
 //Add type to selection or remove if selected already//
 function addTypeToSelection () {
+    /*let selectedType = (name);*/
+   /*let selectedType = document.getElementById("button").name;*/
+      /*let selectedType = "book_store";*/
+
    let selectedType = event.target.name;
 if (!selection.includes(selectedType)) {
    selection = [];
@@ -234,6 +238,7 @@ if (!selection.includes(selectedType)) {
 }
 }
 
+/*addEventListener("click", addTypeToSelection);*/
 window.onload = function() {
 let types = document.querySelectorAll(".selected-cat");
 types.forEach(element => element.addEventListener("click",addTypeToSelection));
