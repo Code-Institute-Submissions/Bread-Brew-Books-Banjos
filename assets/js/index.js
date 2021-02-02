@@ -231,9 +231,10 @@ function addTypeToSelection () {
       /*let selectedType = "book_store";*/
 
    let selectedType = event.target.name;
-if (!selection.includes(selectedType)) {
+if (event.taeget.type == "button" && !selection.includes(selectedType)) {
    selection = [];
    selection.push(selectedType);
+}
 }
 
 
