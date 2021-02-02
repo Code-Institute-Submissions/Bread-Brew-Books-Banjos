@@ -239,7 +239,7 @@ if (!selection.includes(selectedType)) {
 
 /*addEventListener("click", addTypeToSelection);*/
 
-let types = document.querySelectorAll("selected-cat");
+let types = document.getElementsByClassName("selected-cat");
 types.forEach(element => element.addEventListener("click",addTypesToSelection));
 
 
