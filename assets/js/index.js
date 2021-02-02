@@ -234,6 +234,7 @@ function addTypeToSelection () {
 if (!selection.includes(selectedType)) {
    selection = [];
    selection.push(selectedType);
+   search();
 }
 }
 
