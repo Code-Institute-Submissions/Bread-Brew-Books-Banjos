@@ -238,10 +238,10 @@ if (!selection.includes(selectedType)) {
 }
 
 /*addEventListener("click", addTypeToSelection);*/
-
+window.onload = function() {
 let types = document.querySelectorAll(".selected-cat");
 types.forEach(element => element.addEventListener("click",addTypeToSelection));
-
+}
 
 //Marker
 const MARKER_PATH =
