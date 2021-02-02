@@ -227,11 +227,15 @@ const countryRestrict = { country: "all" };
 //Add type to selection or remove if selected already//
 function addTypeToSelection () {
     /*let selectedType = (name);*/
-
    /*let selectedType = document.getElementById("button").name;*/
-   let selectedType = "book_store";
-    selection.push(selectedType)
+      /*let selectedType = "book_store";*/
 
+   let selectedType = event.target.name;
+    if (selection.includes(selectedType)) {
+        selection.pop(selectedType);
+    } else {
+        selection.push(selectedType);
+    }
 }
 
 addEventListener("click", addTypeToSelection);
