@@ -231,12 +231,11 @@ function addTypeToSelection () {
       /*let selectedType = "book_store";*/
 
    let selectedType = event.target.name;
-    if (selection.includes(selectedType)) {
-        selection.pop(selectedType);
-    } else {
-        selection.push(selectedType);
-    }
+if (!selection.includes(selectedType)) {
+   selection = [];
+   selection.push(selectedType);
 }
+
 
 addEventListener("click", addTypeToSelection);
 
