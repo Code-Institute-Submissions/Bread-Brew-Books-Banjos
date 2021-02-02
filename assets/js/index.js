@@ -231,18 +231,16 @@ function addTypeToSelection () {
       /*let selectedType = "book_store";*/
 
    let selectedType = event.target.name;
-if (event.taeget.type == "button" && !selection.includes(selectedType)) {
+if (!selection.includes(selectedType)) {
    selection = [];
    selection.push(selectedType);
 }
 }
 
-
-addEventListener("click", addTypeToSelection);
+/*addEventListener("click", addTypeToSelection);*/
 
 let types = document.querySelectorAll("selected-cat");
-types.forEach(element => element.addEventListener("click",));
-
+types.forEach(element => element.addEventListener("click",addTypesToSelection));
 
 
 //Marker
