@@ -12,6 +12,8 @@ set defaults to ireland
 expand country default locations
 add country maps
 
+try and filter out bookmakers, if I can integrate keyword
+
 TESTING - hardcoded the Google Place keywords to determine they were correctly displaying by searching and checking that the returns represented the type used
 
 
