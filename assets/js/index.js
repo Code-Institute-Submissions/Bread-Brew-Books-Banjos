@@ -524,4 +524,20 @@ function buildIWContent(place) {
   } else {
     document.getElementById("iw-website-row").style.display = "none";
   }
+
+    // Retrieve photo
+  /*if (place.photo) {
+    let fullUrl = place.website;
+    let website = String(hostnameRegexp.exec(place.website));
+
+    if (!website) {
+      website = "http://" + place.website + "/";
+      fullUrl = website;
+    }
+    document.getElementById("iw-website-row").style.display = "";
+    document.getElementById("iw-website").textContent = website;
+  } else {
+    document.getElementById("iw-website-row").style.display = "none";
+  }*/
+  
 }
