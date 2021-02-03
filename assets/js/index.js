@@ -4,6 +4,8 @@ let infoWindow;
 let markers = [];
 let autocomplete;
 let selection = [];
+/*let = { country: "all"};
+const countryRestrict = { country: "all" };*/
 const countryRestrict = { country: "all" };
 
 // Add styles //
@@ -224,6 +226,8 @@ const countryRestrict = { country: "all" };
   }
 ]*/
 
+
+
 //Add type to selection or remove if selected already//
 function addTypeToSelection () {
    let selectedType = event.target.name;
@@ -238,6 +242,7 @@ window.onload = function() {
 let types = document.querySelectorAll(".selected-cat");
 types.forEach(element => element.addEventListener("click",addTypeToSelection));
 }
+
 
 //Marker
 const MARKER_PATH =
@@ -329,6 +334,8 @@ function initMap() {
   infoWindow = new google.maps.InfoWindow({
     content: document.getElementById("info-content"),
   });
+
+
   // Create the autocomplete object and associate it with the UI input control.
   // Restrict the search to the default country, and to place type "cities".
   autocomplete = new google.maps.places.Autocomplete(

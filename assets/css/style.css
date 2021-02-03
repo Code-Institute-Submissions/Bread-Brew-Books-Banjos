@@ -26,6 +26,16 @@ display: contents;
     font-size: 1.7em!important;
 }
 
+button#bakery:active,
+button#bakery:hover,
+button#bakery:focus,
+button#bakery:target{
+    background:blue;
+    color: cornsilk;
+}
+
+
+
 .type-search {
   -webkit-box-align: center;
   -ms-flex-align: center;

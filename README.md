@@ -13,6 +13,7 @@ expand country default locations
 add country maps
 
 try and filter out bookmakers, if I can integrate keyword
+need to add a modal for "no reults" and that clears the markers
 
 TESTING - hardcoded the Google Place keywords to determine they were correctly displaying by searching and checking that the returns represented the type used
 
