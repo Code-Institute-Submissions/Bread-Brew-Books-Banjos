@@ -5,6 +5,10 @@ body {
   padding: 0;
 }
 
+/*.modal-dialog {
+    width: 60%;
+}*/
+
 .feature {
 margin: 10px;
 display: contents;
