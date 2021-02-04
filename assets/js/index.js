@@ -12,6 +12,19 @@ const countryRestrict = { country: "all" };
 //Add type to selection or remove if selected already//
 function addTypeToSelection () {
    let selectedType = event.target.name;
+
+
+/*if(!selection ="lodging") {
+   selection = [];
+   selection.push("night_club");
+   search();
+} else {
+   selection = [];
+   selection.push(selectedType);
+   search();
+}
+}*/
+
 if (!selection.includes(selectedType)) {
    selection = [];
    selection.push(selectedType);
