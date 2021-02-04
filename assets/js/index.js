@@ -35,7 +35,6 @@ let types = document.querySelectorAll(".selected-cat");
 types.forEach(element => element.addEventListener("click",addTypeToSelection));
 }
 
-
 //Marker
 const MARKER_PATH =
     "https://developers.google.com/maps/documentation/javascript/images/marker_green";
@@ -341,3 +340,12 @@ function buildIWContent(place) {
   
 }
 
+
+//button jquery
+/*
+$("button").click(function(){
+    var color = clicked ? 'red' : 'blue';
+    $(this).css('background-color', color);
+    clicked = !clicked;
+});
+*/
