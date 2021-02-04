@@ -30,11 +30,19 @@ display: contents;
     font-size: 1.7em!important;
 }
 
-button#bakery:active,
+/*button#bakery:active,
 button#bakery:hover,
 button#bakery:focus,
 button#bakery:target{
     background:blue;
+    color: cornsilk;
+}*/
+
+button:active,
+button:hover,
+button:focus,
+button:target{
+    background:green;
     color: cornsilk;
 }
 

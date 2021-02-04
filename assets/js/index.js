@@ -7,7 +7,7 @@ let autocomplete;
 let selection = [];
 /*let = { country: "all"};
 const countryRestrict = { country: "all" };*/
-const countryRestrict = { country: "all" };
+let countryRestrict;
 
 //Add type to selection or remove if selected already//
 function addTypeToSelection () {
@@ -342,3 +342,4 @@ function buildIWContent(place) {
   }*/
   
 }
+

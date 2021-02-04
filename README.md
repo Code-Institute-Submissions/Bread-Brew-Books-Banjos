@@ -21,3 +21,10 @@ TESTING - hardcoded the Google Place keywords to determine they were correctly d
 
 
 moved js to bottom of page and removed defer text
+
+
+
+Trying to hget button active to stay 
+- $(".four-buttons > .btn-lg").click(function(){
+    $(this).addClass("active").siblings().removeClass("active");
+});
