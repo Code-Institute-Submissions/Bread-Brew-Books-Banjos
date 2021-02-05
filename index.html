@@ -35,19 +35,15 @@
 
 <!-- Start of Main App-->
 
-  <div class="container-fluid">
-    <div class="feature">
-
-        <div class="col-8 row">
-            <h3 class="col-md-12 b4main justify-content-md-center">Browse the Best</h3>
-                <a href="#" onclick="toggle_visibility('listing');"><button type="button" class="btn-lg btn-bread selected-cat"  name= "bakery"><i class="fas fa-bread-slice"></i> Bread</button></a>
-                <a href="#" onclick="toggle_visibility('listing');"><button type="button" class="btn-lg btn-brew selected-cat" name= "cafe"><i class="fas fa-coffee"></i> Brew </button></a>
-                <a href="#" onclick="toggle_visibility('listing');"><button type="button" class="btn-lg btn-books selected-cat" name= "book_store"><i class="fas fa-book-open"></i> Books</button></a>
-               <a href="#" onclick="toggle_visibility('listing');"><button type="button" class="btn-lg btn-banjos selected-cat" name= "night_club"><i class="fas fa-music"></i> Banjos</button></a> 
+    <div class="container-fluid feature">
+        <div class="row-fluid">
+            <h3 class="b4main justify-content-md-center">Browse the Best</h3>
+                <a href="#" onclick="toggle_visibility('searchfield');"><button type="button" class="btn-lg btn-bread selected-cat"  name= "bakery"><i class="fas fa-bread-slice"></i> Bread</button></a>
+                <a href="#" onclick="toggle_visibility('searchfield');"><button type="button" class="btn-lg btn-brew selected-cat" name= "cafe"><i class="fas fa-coffee"></i> Brew </button></a>
+                <a href="#" onclick="toggle_visibility('searchfield');"><button type="button" class="btn-lg btn-books selected-cat" name= "book_store"><i class="fas fa-book-open"></i> Books</button></a>
+                <a href="#" onclick="toggle_visibility('searchfield');"><button type="button" class="btn-lg btn-banjos selected-cat" name= "night_club"><i class="fas fa-music"></i> Banjos</button></a> 
         </div>
-        
-         <div id="listing" class="col-4" style="display:none">
-            <div class="type-search">
+        <div id="searchfield" class="row-fluid type-search inline" style="display:none">
                 <div id="findtype">in:</div>
                 <div id="locationField">
                     <input id="autocomplete" placeholder="Enter a city" type="text" />
@@ -73,12 +69,13 @@
                         </select>
                 </div>
             </div>
+        
+         <div id="listing" class="col-4">
 
-
-        <table id="resultsTable">
-            <tbody id="results"></tbody>
-        </table>
-         <div class = "welcome"> <p>xxx </p></div>
+            <table id="resultsTable">
+                <tbody id="results"></tbody>
+            </table>
+            <div class = "welcome"> <p>xxx </p></div>
 
         </div>
     
@@ -114,7 +111,7 @@
         </div>
         </div>
     </div>
-    </div>
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
