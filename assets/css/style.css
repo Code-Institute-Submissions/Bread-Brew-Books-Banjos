@@ -47,7 +47,7 @@ button:hover,
 button:focus,
 button:target{
     background:green;
-    color: cornsilk;
+    color: rgb(255, 255, 255);
 }
 
 

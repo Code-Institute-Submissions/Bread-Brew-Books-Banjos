@@ -244,12 +244,14 @@ function dropMarker(i) {
   };
 }
 
+
+//List Results
 function addResult(result, i) {
   const results = document.getElementById("results");
   const markerLetter = String.fromCharCode("A".charCodeAt(0) + (i % 26));
   const markerIcon = MARKER_PATH + markerLetter + ".png";
   const tr = document.createElement("tr");
-  tr.style.backgroundColor = i % 2 === 0 ? "#F0F0F0" : "#FFFFFF";
+  tr.style.backgroundColor = i % 2 === 0 ? "#e8f6ff" : "#FFFFFF";
 
   tr.onclick = function () {
     google.maps.event.trigger(markers[i], "click");
