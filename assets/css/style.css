@@ -5,9 +5,9 @@ body {
   padding: 0;
 }
 
-/*.modal-dialog {
-    width: 60%;
-}*/
+.modal-content {
+    min-width: 600px;
+}
 
 .four-buttons {
     width: 100%;
@@ -31,7 +31,7 @@ display: contents;
 .btn-main {
     margin-left: 4px!important;
     margin-right: 4px!important;
-    font-size: 1.7em!important;
+    font-size: 1.1em!important;
 }
 
 /*button#bakery:active,
