@@ -187,10 +187,18 @@ margin-top: 62px;
 .pac-container {
     border-color: #aeecff;
     background-color: #dff6ff;
-    z-index: 1054 !important;
-
+    z-index: 20;
+    position: fixed;
+    display: inline-block;
+    float: left;
 }
 
+.modal{
+    z-index: 20;   
+}
+.modal-backdrop{
+    z-index: 10;        
+}​
 
 /* Button toggle 
 #btnHousing {
