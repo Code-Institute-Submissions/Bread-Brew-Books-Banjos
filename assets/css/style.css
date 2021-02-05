@@ -7,7 +7,6 @@ body {
 
 /*Fonts*/
 
-
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Open Sans', sans-serif;
 }
@@ -96,6 +95,10 @@ button:target{
   font-size: 1.5rem;
   line-height: 2;
   padding-top: 10px;
+}
+
+.where-modal {
+    padding-top: .75em;
 }
 
 #map {

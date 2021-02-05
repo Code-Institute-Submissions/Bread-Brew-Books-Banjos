@@ -40,18 +40,17 @@
 
 
         <!-- Modal content-->
-            <h3>Travel anywhere in the world and explore the four most important things you can do in a city - the 4 B's:
+            <h4>Travel anywhere in the world and explore the four most important things you can do in a city - the 4 B's:
             <ul>
                 <li>eat Bread</li>
                 <li>drink Brew</li>
                 <li>read Books</li>
                 <li>listen to Banjos*</li>
             </ul>
-            </h3>
+            </h4>
             <h6>*music may or may not include Banjos</h6>
             
-            <h4>Choose your "B", type a city into the search box and hit return!</h4>
-
+            <h4 class="row justify-content-md-center">Choose what you want to Be doing.</h4>
              <div class ="container four-buttons" >
                    <div class="row justify-content-md-center">
                 <a href="#" onclick="toggle_visibility('ok-modal');"><button type="button" class="btn-lg btn-bread selected-cat"  name= "bakery"><i class="fas fa-bread-slice"></i> Bread</button></a>
@@ -63,14 +62,18 @@
             </div>
         </div>
            
-<!--
+             <div class ="container where-modal">
+             <h4 class="row justify-content-md-center">Where do you want to Be?</h4>
+            </div>
             <div class="type-search-modal">
-                <div id="findtype-modal">in:</div>
+                <div id="findtype-modal">
+                </div>
                     <div id="locationField-modal">
-                        <input id="autocompleteModal" placeholder="Enter a city" type="text" />
+                        <h6><em>Trying to use the locationField function here but the z-index seems to be wrong</em></h6>
+                        <!--<input id="autocompleteModal" placeholder="Enter a city" type="text" />-->
                     </div>
             </div> 
- -->
+ 
 
         <!--End Modal Content-->
       </div>
