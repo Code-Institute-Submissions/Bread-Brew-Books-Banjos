@@ -22,6 +22,7 @@ function toggleOKButton() {
 
 
 
+
 //Add type to selection or remove if selected already//
 function addTypeToSelection () {
    let selectedType = event.target.name;
@@ -49,6 +50,10 @@ window.onload = function() {
 let types = document.querySelectorAll(".selected-cat");
 types.forEach(element => element.addEventListener("click",addTypeToSelection));
 }
+
+	/*$(document).ready(function(){
+		$("#introModal").modal('show');
+	});*/
 
 //Marker
 const MARKER_PATH =
