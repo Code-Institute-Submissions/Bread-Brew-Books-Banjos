@@ -384,7 +384,7 @@ $("button").click(function(){
 });
 */
 
-function btnColor(btn) {
+/*function btnColor(btn) {
 var property = document.getElementById(btn);
     if (property.className !== 'active') {
         property.className = 'active'
@@ -392,4 +392,9 @@ var property = document.getElementById(btn);
     else {
         property.className = '';
     }
-}
+}*/
+
+$('button').on('click', function(){
+    $('button').removeClass('active');
+    $(this).addClass('active');
+});
