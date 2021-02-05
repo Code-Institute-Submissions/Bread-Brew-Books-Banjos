@@ -5,19 +5,13 @@ let infoWindow;
 let markers = [];
 let autocomplete;
 let autocompleteModal;
-let selection = [];
+let selection;
 let countryRestrict;
+
 
 //Add type to selection or remove if selected already//
 function addTypeToSelection () {
-   let selectedType = event.target.name;
-
-
-if (!selection.includes(selectedType)) {
-   selection = [];
-   selection.push(selectedType);
-   search();
-}
+   selection = event.target.name;
 }
 
 window.onload = function() {
@@ -153,7 +147,7 @@ function onPlaceChanged() {
 function search() {
   const search = {
     bounds: map.getBounds(),
-    types: selection,
+    types: [selection],
   };
   places.nearbySearch(search, (results, status, pagination) => {
     if (status === google.maps.places.PlacesServiceStatus.OK) {

@@ -8,10 +8,36 @@ let autocompleteModal;
 let selection = [];
 let countryRestrict;
 
+/* poor attempt at hidide and reveal OK button
+function toggleOKButton() {
+    var OKButton = document.getElementById("ok-button");
+
+    if (displaySetting =="block") {
+        OKButton.style.display ="none";
+    }
+    else {
+    OKButton.style.display = "block";
+    }
+}*/
+
+
+
+
 //Add type to selection or remove if selected already//
 function addTypeToSelection () {
    let selectedType = event.target.name;
 
+
+/*if(!selection ="lodging") {
+   selection = [];
+   selection.push("night_club");
+   search();
+} else {
+   selection = [];
+   selection.push(selectedType);
+   search();
+}
+}*/
 
 if (!selection.includes(selectedType)) {
    selection = [];
@@ -24,6 +50,10 @@ window.onload = function() {
 let types = document.querySelectorAll(".selected-cat");
 types.forEach(element => element.addEventListener("click",addTypeToSelection));
 }
+
+	/*$(document).ready(function(){
+		$("#introModal").modal('show');
+	});*/
 
 //Marker
 const MARKER_PATH =
