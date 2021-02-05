@@ -7,6 +7,20 @@ let autocomplete;
 let selection = [];
 let countryRestrict;
 
+/* poor attempt at hidide and reveal OK button
+function toggleOKButton() {
+    var OKButton = document.getElementById("ok-button");
+
+    if (displaySetting =="block") {
+        OKButton.style.display ="none";
+    }
+    else {
+    OKButton.style.display = "block";
+    }
+}*/
+
+
+
 //Add type to selection or remove if selected already//
 function addTypeToSelection () {
    let selectedType = event.target.name;
@@ -339,6 +353,14 @@ function buildIWContent(place) {
   }*/
   
 }
+
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
 
 
 //button jquery
