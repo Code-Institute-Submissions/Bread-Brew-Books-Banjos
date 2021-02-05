@@ -4,6 +4,7 @@ let places;
 let infoWindow;
 let markers = [];
 let autocomplete;
+let autocompleteModal;
 let selection = [];
 let countryRestrict;
 
@@ -289,7 +290,7 @@ function showInfoWindow() {
 // Load the place information into the HTML elements used by the info window.
 function buildIWContent(place) {
   document.getElementById("iw-icon").innerHTML =
-    '<img class="resultIcon" ' + 'src="' + place.icon + '"/>';
+    '<img class="hotelIcon" ' + 'src="' + place.icon + '"/>';
   document.getElementById("iw-url").innerHTML =
     '<b><a href="' + place.url + '">' + place.name + "</a></b>";
   document.getElementById("iw-address").textContent = place.vicinity;
@@ -333,9 +334,13 @@ function buildIWContent(place) {
     }
     document.getElementById("iw-website-row").style.display = "";
     document.getElementById("iw-website").textContent = website;
+    document.getElementById("iw-website").innerHTML =
+        '<u><a href="' + place.url + '">' + website + "</a></u>";
+        //, "_blank" trying to integrate new window
   } else {
     document.getElementById("iw-website-row").style.display = "none";
   }
+}
 
     // Retrieve photo
   /*if (place.photo) {
@@ -352,7 +357,7 @@ function buildIWContent(place) {
     document.getElementById("iw-website-row").style.display = "none";
   }*/
   
-}
+
 
     function toggle_visibility(id) {
        var OKModal = document.getElementById(id);

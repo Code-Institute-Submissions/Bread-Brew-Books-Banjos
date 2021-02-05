@@ -49,16 +49,40 @@
             
             <h4>Choose your "B", type a city into the search box and hit return!</h4>
 
-             <div class ="four-buttons">
+             <div class ="four-buttons" >
                 <a href="#" onclick="toggle_visibility('ok-modal');"><button type="button" class="btn-lg btn-bread selected-cat"  name= "bakery">Bread</button></a>
                 <a href="#" onclick="toggle_visibility('ok-modal');"><button type="button" class="btn-lg btn-brew selected-cat" name= "cafe">Brew </button></a>
                 <a href="#" onclick="toggle_visibility('ok-modal');"><button type="button" class="btn-lg btn-books selected-cat" name= "book_store">Books</button></a>
                <a href="#" onclick="toggle_visibility('ok-modal');"><button type="button" class="btn-lg btn-banjos selected-cat" name= "night_club" >Banjos</button></a> 
             </div>
-             <!--<div id="locationField">
-            <input id="autocomplete" placeholder="Enter a city" type="text" />
-        </div>-->
-            
+           
+           <!--<div class="type-search">
+                <div id="findtype">in:</div>
+                    <div id="locationField">
+                        <input id="autocomplete" placeholder="Enter a city" type="text" />
+                    </div>
+                   <div id="controls">
+                            <select id="country">
+                            <option value="all" default>All Countries</option>
+                            <option value="au">Australia</option>
+                            <option value="br">Brazil</option>
+                            <option value="ca">Canada</option>
+                            <option value="fr">France</option>
+                            <option value="de">Germany</option>
+                            <option value="ie">Ireland</option>
+                            <option value="mx">Mexico</option>
+                            <option value="nz">New Zealand</option>
+                            <option value="ng">Nigeria</option>
+                            <option value="it">Italy</option>
+                            <option value="za">South Africa</option>
+                            <option value="es">Spain</option>
+                            <option value="pt">Portugal</option>
+                            <option value="us">U.S.A.</option>
+                            <option value="uk">United Kingdom</option>
+                            </select>
+                    </div>
+            </div>-->
+
         <!--End Modal Content-->
       </div>
 
@@ -84,34 +108,32 @@
         </div>
         
          <div id="listing" class="col-6">
-        <div class="type-search">
-        <div id="findtype">in:</div>
-
-        <div id="locationField">
-            <input id="autocomplete" placeholder="Enter a city" type="text" />
-        </div>
-
-        <div id="controls">
-            <select id="country">
-            <option value="all" default>All Countries</option>
-            <option value="au">Australia</option>
-            <option value="br">Brazil</option>
-            <option value="ca">Canada</option>
-            <option value="fr">France</option>
-            <option value="de">Germany</option>
-            <option value="ie">Ireland</option>
-            <option value="mx">Mexico</option>
-            <option value="nz">New Zealand</option>
-            <option value="ng">Nigeria</option>
-            <option value="it">Italy</option>
-            <option value="za">South Africa</option>
-            <option value="es">Spain</option>
-            <option value="pt">Portugal</option>
-            <option value="us">U.S.A.</option>
-            <option value="uk">United Kingdom</option>
-            </select>
-        </div>
-        </div>
+            <div class="type-search">
+                <div id="findtype">in:</div>
+                <div id="locationField">
+                    <input id="autocomplete" placeholder="Enter a city" type="text" />
+                </div>
+                <div id="controls">
+                        <select id="country">
+                        <option value="all" default>All Countries</option>
+                        <option value="au">Australia</option>
+                        <option value="br">Brazil</option>
+                        <option value="ca">Canada</option>
+                        <option value="fr">France</option>
+                        <option value="de">Germany</option>
+                        <option value="ie">Ireland</option>
+                        <option value="mx">Mexico</option>
+                        <option value="nz">New Zealand</option>
+                        <option value="ng">Nigeria</option>
+                        <option value="it">Italy</option>
+                        <option value="za">South Africa</option>
+                        <option value="es">Spain</option>
+                        <option value="pt">Portugal</option>
+                        <option value="us">U.S.A.</option>
+                        <option value="uk">United Kingdom</option>
+                        </select>
+                </div>
+            </div>
 
         <table id="resultsTable">
             <tbody id="results"></tbody>

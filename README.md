@@ -28,3 +28,6 @@ Trying to hget button active to stay
 - $(".four-buttons > .btn-lg").click(function(){
     $(this).addClass("active").siblings().removeClass("active");
 });
+
+
+Future pla - code (place.website) so that it is dynamic and clickable
