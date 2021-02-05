@@ -19,9 +19,6 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 
-.modal-content {
-    min-width: 600px;
-}
 
 .four-buttons {
     width: 100%;
@@ -220,4 +217,11 @@ margin-top: 62px;
 
 button.selected{
   color:red;
+}
+
+
+.modal-content {
+    min-width: 600px;
+    border-radius: 1rem!important;
+
 }
