@@ -25,13 +25,17 @@ table {
 .b4main {
 font-weight: 800;
 line-height: 175%;
-display: contents;
+/*display: contents;*/
 }
 
 .btn-main {
     margin-left: 4px!important;
     margin-right: 4px!important;
     font-size: 1.1em!important;
+}
+
+.btn-lg {
+margin: 0 3px 0 3px;
 }
 
 /*button#bakery:active,
@@ -168,3 +172,13 @@ margin-top: 62px;
     border-color: #aeecff;
     background-color: #dff6ff;
 }
+
+
+/* Button toggle 
+#btnHousing {
+    background-color: rgb(255,242,0);
+}
+
+#btnHousing.toggled {
+    background-color: rgb(244,113,33);
+}*/

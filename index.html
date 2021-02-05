@@ -28,7 +28,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="introModalLabel">Browse the Best: Bread, Brew, Books and Banjos</h5>
+        <h1 class="modal-title" id="introModalLabel"><b>Browse the Best:</b></h1>
       <!---  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button> -->
@@ -49,44 +49,27 @@
             
             <h4>Choose your "B", type a city into the search box and hit return!</h4>
 
-             <div class ="four-buttons" >
+             <div class ="container four-buttons" >
+                   <div class="row justify-content-md-center">
                 <a href="#" onclick="toggle_visibility('ok-modal');"><button type="button" class="btn-lg btn-bread selected-cat"  name= "bakery"><i class="fas fa-bread-slice"></i> Bread</button></a>
                 <a href="#" onclick="toggle_visibility('ok-modal');"><button type="button" class="btn-lg btn-brew selected-cat" name= "cafe"><i class="fas fa-coffee"></i> Brew </button></a>
                 <a href="#" onclick="toggle_visibility('ok-modal');"><button type="button" class="btn-lg btn-books selected-cat" name= "book_store"><i class="fas fa-book-open"></i> Books</button></a>
                <a href="#" onclick="toggle_visibility('ok-modal');"><button type="button" class="btn-lg btn-banjos selected-cat" name= "night_club"><i class="fas fa-music"></i> Banjos</button></a> 
+
             </div>
+        </div>
            
-           <!--<div class="type-search">
+           <div class="type-search">
                 <div id="findtype">in:</div>
                     <div id="locationField">
                         <input id="autocomplete" placeholder="Enter a city" type="text" />
                     </div>
-                   <div id="controls">
-                            <select id="country">
-                            <option value="all" default>All Countries</option>
-                            <option value="au">Australia</option>
-                            <option value="br">Brazil</option>
-                            <option value="ca">Canada</option>
-                            <option value="fr">France</option>
-                            <option value="de">Germany</option>
-                            <option value="ie">Ireland</option>
-                            <option value="mx">Mexico</option>
-                            <option value="nz">New Zealand</option>
-                            <option value="ng">Nigeria</option>
-                            <option value="it">Italy</option>
-                            <option value="za">South Africa</option>
-                            <option value="es">Spain</option>
-                            <option value="pt">Portugal</option>
-                            <option value="us">U.S.A.</option>
-                            <option value="uk">United Kingdom</option>
-                            </select>
-                    </div>
-            </div>-->
+            </div>
 
         <!--End Modal Content-->
       </div>
 
-      <div class="modal-footer" id="ok-modal" style="display:none">
+      <div class="modal-footer justify-content-md-center" id="ok-modal" style="display:none">
         <button type="button" class="btn btn-secondary" data-dismiss="modal" id="ok-button" >Go</button>
       </div>
     </div>
@@ -97,17 +80,16 @@
 
   <div class="container-fluid">
     <div class="feature">
-        <div class="col-6">
-            <h3 class="b4main">Browse the Best</h3>
-            <div class ="four-buttons">
+
+        <div class="col-8 row">
+            <h3 class="col-md-12 b4main justify-content-md-center">Browse the Best</h3>
                 <button type="button" class="btn-lg btn-bread selected-cat"  name= "bakery"><i class="fas fa-bread-slice"></i> Bread</button>
                 <button type="button" class="btn-lg btn-brew selected-cat" name= "cafe"><i class="fas fa-coffee"></i> Brew </button>
                 <button type="button" class="btn-lg btn-books selected-cat" name= "book_store"><i class="fas fa-book-open"></i> Books</button>
                 <button type="button" class="btn-lg btn-banjos selected-cat" name= "night_club"><i class="fas fa-music"></i> Banjos</button>
-            </div>
         </div>
         
-         <div id="listing" class="col-6">
+         <div id="listing" class="col-4">
             <div class="type-search">
                 <div id="findtype">in:</div>
                 <div id="locationField">

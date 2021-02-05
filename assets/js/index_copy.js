@@ -384,12 +384,11 @@ $("button").click(function(){
 });
 */
 
-function btnColor(btn) {
-var property = document.getElementById(btn);
-    if (property.className !== 'active') {
-        property.className = 'active'
-    }
-    else {
-        property.className = '';
-    }
-}
+$('.button').click(function() {
+  if ($(this).hasClass("active")) {
+    $(this).removeClass("active");
+  } else {
+    $('.button').removeClass("active");
+    $(this).addClass("active");
+  }
+});
