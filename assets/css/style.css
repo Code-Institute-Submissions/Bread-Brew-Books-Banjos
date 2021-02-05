@@ -5,6 +5,17 @@ body {
   padding: 0;
 }
 
+/*Fonts*/
+
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+p {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
 .modal-content {
     min-width: 600px;
 }
@@ -187,18 +198,9 @@ margin-top: 62px;
 .pac-container {
     border-color: #aeecff;
     background-color: #dff6ff;
-    z-index: 20;
-    position: fixed;
-    display: inline-block;
-    float: left;
+    z-index: 1051 !important;
 }
 
-.modal{
-    z-index: 20;   
-}
-.modal-backdrop{
-    z-index: 10;        
-}​
 
 /* Button toggle 
 #btnHousing {

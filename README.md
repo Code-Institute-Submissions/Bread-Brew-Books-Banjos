@@ -137,15 +137,11 @@ This was deployed on GitHub Pages and can be viewed at: <a href="https://charlie
 - Took advice from MS1 PREPARATION CALL pdf regarding Validation links
 
 #### Hints 
-- I relied on Bootstrap Documentation, past Code Institute lessons and project code and W3 Schools threads for Hints
-- Some examples: Centering the embedded video <https://stackoverflow.com/questions/22433616/how-can-i-align-youtube-embedded-video-in-the-center-in-bootstrap/22433845>
+- 
+- 
 
 ### Acknowledgelmets
-* Thank you to my mentor, Ignatius Ukwuoma, for his valuable insight, feedback and suggestions throughout the project.
-* The Online community and internet in general was enormously helpful for sharing code, media and tips.
-* Eternal thanks to Grampa Verona (Giovanni Virone as he was known in the Akrágas area) for ensuring my existence and connecting me to such an amazing place
-* Eternal thanks to his daughter, my Mom, for life - to my eldest brother John for taking me on a trip to the Valley of the Temples and to our family 
-for sharing the same passion for "All Things Sicily"
+* 
 
 ### Disclaimer
 This website was created for educational purposes only. 
