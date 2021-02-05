@@ -21,6 +21,8 @@
 		$("#introModal").modal('show');
 	});
 </script>
+
+
 <!--ModalEnd-->
 
   </head>
@@ -47,7 +49,7 @@
             </h4>
             <h6>*music may or may not include Banjos</h6>
             
-            <h4 class="row justify-content-md-center">Choose what you want to Be doing.</h4>
+            <h4 class="row justify-content-md-center what-modal">What you want to "Be" doing.</h4>
              <div class ="container four-buttons" >
                    <div class="row justify-content-md-center">
                 <a href="#" onclick="toggle_visibility('ok-modal');"><button type="button" class="btn-lg btn-bread selected-cat"  name= "bakery"><i class="fas fa-bread-slice"></i> Bread</button></a>
@@ -58,14 +60,13 @@
         </div>
            
              <div class ="container where-modal">
-             <h4 class="row justify-content-md-center">Where do you want to Be?</h4>
+             <h4 class="row justify-content-md-center">Where do you want to "Be"?</h4>
             </div>
-            <div class="type-search-modal">
+            <div class="justify-content-md-center type-search-modal">
                 <div id="findtype-modal">
                 </div>
                     <div id="locationField-modal">
-                        <h6><em>Trying to use the locationField function here but the z-index seems to be wrong</em></h6>
-                        <input id="autocomplete" placeholder="Enter a city" type="text" />
+                        <input class="autocompleteModal" id="autocomplete" placeholder="Enter a city" type="text" />
                     </div>
             </div> 
  

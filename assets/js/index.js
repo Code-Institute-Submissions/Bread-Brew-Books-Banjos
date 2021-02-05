@@ -4,7 +4,6 @@ let places;
 let infoWindow;
 let markers = [];
 let autocomplete;
-let autocompleteModal;
 let selection = [];
 let countryRestrict;
 
@@ -19,6 +18,8 @@ if (!selection.includes(selectedType)) {
    search();
 }
 }
+
+
 
 window.onload = function() {
 let types = document.querySelectorAll(".selected-cat");
@@ -369,3 +370,4 @@ $('button').on('click', function(){
     $('button').removeClass('active');
     $(this).addClass('active');
 });
+
