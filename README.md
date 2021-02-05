@@ -13,6 +13,8 @@ Using the power of Google Places API, Browse the Best simplifies Place Searches 
 making the experience both **wide**, allowing for a variety of activities and inetrests, but
 also **focused** in that a user can limit the results shown to a specific Place type.
 
+Each of these categories/activities lend themselves to solo and group associations, further expanding the usefulness of the functionality.
+
 ***
 
 ## UX (User Experience)
@@ -38,6 +40,11 @@ also **focused** in that a user can limit the results shown to a specific Place 
     full experience and allows me to imagine and plan enjoyable visits which
 
 ## Design
+
+- ### Branding 
+Alliteration of the B sound - Browse the Best to frame the offering, that the user will get to dynamically search for and explore offerings
+Reinforced by the further B alliteration of the four "B" categories which offer variety and specificity
+
 - ### Colours
 
 - ### UI
