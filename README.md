@@ -22,7 +22,7 @@ TESTING - hardcoded the Google Place keywords to determine they were correctly d
 
 moved js to bottom of page and removed defer text
 
-
+show and hide modal <https://css-tricks.com/snippets/javascript/showhide-element/>
 
 Trying to hget button active to stay 
 - $(".four-buttons > .btn-lg").click(function(){

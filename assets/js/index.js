@@ -355,11 +355,11 @@ function buildIWContent(place) {
 }
 
     function toggle_visibility(id) {
-       var e = document.getElementById(id);
-       if(e.style.display == 'block')
-          e.style.display = 'none';
-       else
-          e.style.display = 'block';
+       var OKModal = document.getElementById(id);
+       /*if(OKModal.style.display == 'block')
+          OKModal.style.display = 'none';
+       else*/
+          OKModal.style.display = 'block';
     }
 
 
