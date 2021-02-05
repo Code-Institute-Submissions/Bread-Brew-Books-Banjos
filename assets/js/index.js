@@ -277,7 +277,7 @@ function showInfoWindow() {
   const marker = this;
   places.getDetails(
     { placeId: marker.placeResult.place_id },
-    (place, status) => {
+    (place, status, photos) => {
       if (status !== google.maps.places.PlacesServiceStatus.OK) {
         return;
       }
@@ -376,3 +376,12 @@ $("button").click(function(){
     clicked = !clicked;
 });
 */
+
+$('.button').click(function() {
+  if ($(this).hasClass("active")) {
+    $(this).removeClass("active");
+  } else {
+    $('.button').removeClass("active");
+    $(this).addClass("active");
+  }
+});
