@@ -203,6 +203,10 @@ function search() {
       }
       if (results.length == 0) {
           // Output some HTML content here to display a message that says no results.
+          const results = document.getElementById("results");
+          h1 = document.createElement("h1");
+          h1.textContent = "No results here!";
+          results.appendChild(h1);
       }
     }
     //else {console.log('<p>No Results</p>')}
