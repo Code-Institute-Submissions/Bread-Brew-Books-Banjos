@@ -4,7 +4,7 @@ let places;
 let infoWindow;
 let markers = [];
 let autocomplete;
-let selection;
+let selection = [];
 let countryRestrict;
 
 //Marker
@@ -105,7 +105,7 @@ function addTypeToSelection () {
 
 
 if (!selection.includes(selectedType)) {
-   selection;
+   selection = [];
    selection.push(selectedType);
    search();
     }

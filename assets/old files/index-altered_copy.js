@@ -4,8 +4,20 @@ let places;
 let infoWindow;
 let markers = [];
 let autocomplete;
+let autocompleteModal;
 let selection;
 let countryRestrict;
+
+
+//Add type to selection or remove if selected already//
+function addTypeToSelection () {
+   selection = event.target.name;
+}
+
+window.onload = function() {
+let types = document.querySelectorAll(".selected-cat");
+types.forEach(element => element.addEventListener("click",addTypeToSelection));
+}
 
 //Marker
 const MARKER_PATH =
@@ -81,7 +93,6 @@ all: {
 };
 
 
-
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     zoom: countries["all"].zoom,
@@ -99,55 +110,6 @@ function initMap() {
     content: document.getElementById("info-content"),
   });
 
-  //Add type to selection or remove if selected already//
-function addTypeToSelection () {
-   let selectedType = event.target.name;
-
-
-if (!selection.includes(selectedType)) {
-   selection;
-   selection.push(selectedType);
-   search();
-    }
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-
-    let myBtns=document.querySelectorAll('.content-itinerary__buttons');
-    myBtns.forEach(function(btn) {
-
-        btn.addEventListener('click', () => {
-          myBtns.forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
-        });
- 
-    });
-
-});
-
-
-
-document.addEventListener('DOMContentLoaded', () => {
-
-    let myBtns=document.querySelectorAll('.active-state__buttons');
-    myBtns.forEach(function(btn) {
-
-        btn.addEventListener('click', () => {
-          myBtns.forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
-        });
- 
-    });
-
-});
-
-
-
-window.onload = function() {
-let types = document.querySelectorAll(".selected-cat");
-types.forEach(element => element.addEventListener("click",addTypeToSelection));
-}
-  //End Addtype
 
   // Create the autocomplete object and associate it with the UI input control.
   // Restrict the search to the default country, and to place type "cities".
@@ -185,7 +147,7 @@ function onPlaceChanged() {
 function search() {
   const search = {
     bounds: map.getBounds(),
-    types: selection,
+    types: [selection],
   };
   places.nearbySearch(search, (results, status, pagination) => {
     if (status === google.maps.places.PlacesServiceStatus.OK) {
@@ -211,7 +173,6 @@ function search() {
         addResult(results[i], i);
       }
     }
-    //else {console.log(noresults)}
   });
 }
 
@@ -402,5 +363,3 @@ $('button').on('click', function(){
     $('button').removeClass('active');
     $(this).addClass('active');
 });
-
-

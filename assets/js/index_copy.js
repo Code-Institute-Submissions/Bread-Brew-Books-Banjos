@@ -4,7 +4,7 @@ let places;
 let infoWindow;
 let markers = [];
 let autocomplete;
-let selection;
+let selection = [];
 let countryRestrict;
 
 //Marker
@@ -104,8 +104,8 @@ function addTypeToSelection () {
    let selectedType = event.target.name;
 
 
-if (!selection.includes(selectedType)) {
-   selection;
+if (!selection.includes(selectedType) || !selection.includes("lodging")) {
+   selection = [];
    selection.push(selectedType);
    search();
     }
