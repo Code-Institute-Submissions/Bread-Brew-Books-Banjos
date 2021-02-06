@@ -99,15 +99,13 @@ function initMap() {
     content: document.getElementById("info-content"),
   });
 
-  //Add type to selection or remove if selected already//
-function addTypeToSelection () {
-   let selectedType = event.target.name;
+  
+  //Change selection//
+function selection () {
+   let selection = event.target.name;
 
-
-if (!selection.includes(selectedType)) {
-   selection;
-   selection.push(selectedType);
-   search();
+{
+   search(selection);
     }
 }
 
@@ -145,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 window.onload = function() {
 let types = document.querySelectorAll(".selected-cat");
-types.forEach(element => element.addEventListener("click",addTypeToSelection));
+types.forEach(element => element.addEventListener("click",selection));
 }
   //End Addtype
 
