@@ -7,55 +7,6 @@ let autocomplete;
 let selection = [];
 let countryRestrict;
 
-//Add type to selection or remove if selected already//
-function addTypeToSelection () {
-   let selectedType = event.target.name;
-
-
-if (!selection.includes(selectedType)) {
-   selection = [];
-   selection.push(selectedType);
-   search();
-    }
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-
-    let myBtns=document.querySelectorAll('.content-itinerary__buttons');
-    myBtns.forEach(function(btn) {
-
-        btn.addEventListener('click', () => {
-          myBtns.forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
-        });
- 
-    });
-
-});
-
-
-
-document.addEventListener('DOMContentLoaded', () => {
-
-    let myBtns=document.querySelectorAll('.active-state__buttons');
-    myBtns.forEach(function(btn) {
-
-        btn.addEventListener('click', () => {
-          myBtns.forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
-        });
- 
-    });
-
-});
-
-
-
-window.onload = function() {
-let types = document.querySelectorAll(".selected-cat");
-types.forEach(element => element.addEventListener("click",addTypeToSelection));
-}
-
 //Marker
 const MARKER_PATH =
     "https://developers.google.com/maps/documentation/javascript/images/marker_green";
@@ -130,6 +81,7 @@ all: {
 };
 
 
+
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     zoom: countries["all"].zoom,
@@ -147,6 +99,55 @@ function initMap() {
     content: document.getElementById("info-content"),
   });
 
+  //Add type to selection or remove if selected already//
+function addTypeToSelection () {
+   let selectedType = event.target.name;
+
+
+if (!selection.includes(selectedType) || !selection.includes("lodging")) {
+   selection = [];
+   selection.push(selectedType);
+   search();
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    let myBtns=document.querySelectorAll('.content-itinerary__buttons');
+    myBtns.forEach(function(btn) {
+
+        btn.addEventListener('click', () => {
+          myBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+        });
+ 
+    });
+
+});
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    let myBtns=document.querySelectorAll('.active-state__buttons');
+    myBtns.forEach(function(btn) {
+
+        btn.addEventListener('click', () => {
+          myBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+        });
+ 
+    });
+
+});
+
+
+
+window.onload = function() {
+let types = document.querySelectorAll(".selected-cat");
+types.forEach(element => element.addEventListener("click",addTypeToSelection));
+}
+  //End Addtype
 
   // Create the autocomplete object and associate it with the UI input control.
   // Restrict the search to the default country, and to place type "cities".
@@ -173,7 +174,7 @@ function onPlaceChanged() {
 
   if (place.geometry) {
     map.panTo(place.geometry.location);
-    map.setZoom(14);
+    map.setZoom(15);
     search();
   } else {
     document.getElementById("autocomplete").placeholder = "Enter a city";
@@ -210,6 +211,7 @@ function search() {
         addResult(results[i], i);
       }
     }
+    //else {console.log(noresults)}
   });
 }
 
@@ -400,4 +402,5 @@ $('button').on('click', function(){
     $('button').removeClass('active');
     $(this).addClass('active');
 });
+
 
