@@ -67,6 +67,12 @@ Reinforced by the further B alliteration of the four "B" categories which offer 
 * Responsivity - Responsive across devices - allowing same experience, two column layout
 * Google Map layers allows user to looka t satelitte as well as simplified map view
 
+## Features to be added 
+
+* Refine some results - Google Places groups some establishments I'd rather filter out such as "bookmakers" for "book_stores"
+* Likewise add explicit keywords to types and search function
+
+
 ## Development history
 Get places input working on modal
 get active state as toggle regardless of focus

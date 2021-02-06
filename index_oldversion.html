@@ -8,7 +8,7 @@
     	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
         rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/style_resp.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <script src="assets/js/index_selection_array.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
    
@@ -41,14 +41,16 @@ ModalEnd-->
 
 <div class="row">
   <div class="col-7 inline-block">        
+      <h5 class="b4sub">What do you want to be doing?</h5>  
       <div class="active-state__buttons-wrapper">
-                    <button type="button" class="active-state__buttons btn-lg btn-bread selected-cat"  name= "bakery"><i class="fas fa-bread-slice"></i> Bread</button>
-                    <button type="button" class="active-state__buttons btn-lg btn-brew selected-cat" name= "cafe"><i class="fas fa-coffee"></i> Brew </button>
-                    <button type="button" class="active-state__buttons btn-lg btn-books selected-cat" name= "book_store"><i class="fas fa-book-open"></i> Books</button>
-                    <button type="button" class="active-state__buttons btn-lg btn-banjos selected-cat" name= "night_club"><i class="fas fa-music"></i> Banjos</button>
+                    <a href="#" onclick="toggle_visibility('searchfield');"><button type="button" class="active-state__buttons btn-lg btn-bread selected-cat"  name= "bakery"><i class="fas fa-bread-slice"></i> Bread</button></a>
+                    <a href="#" onclick="toggle_visibility('searchfield');"><button type="button" class="active-state__buttons btn-lg btn-brew selected-cat" name= "cafe"><i class="fas fa-coffee"></i> Brew </button></a>
+                    <a href="#" onclick="toggle_visibility('searchfield');"><button type="button" class="active-state__buttons btn-lg btn-books selected-cat" name= "book_store"><i class="fas fa-book-open"></i> Books</button></a>
+                    <a href="#" onclick="toggle_visibility('searchfield');"><button type="button" class="active-state__buttons btn-lg btn-banjos selected-cat" name= "night_club"><i class="fas fa-music"></i> Banjos</button></a> 
           </div></div>
-  <div class="col-5 inline">
-      <div id="searchfield" class="type-search b4sub">
+  <div class="col-5 inline-block">
+      <div id="searchfield" class="type-search b4sub" style="display:none">
+              <h5 class="b4sub">Where will you be?</h5>  
               <div id="locationField">
                 <input id="autocomplete" placeholder="Enter a city" type="text" />
             </div>
