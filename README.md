@@ -65,6 +65,7 @@ Reinforced by the further B alliteration of the four "B" categories which offer 
 * Map - default and dynamic states
 * Search results
 * Responsivity - Responsive across devices - allowing same experience, two column layout
+* Google Map layers allows user to looka t satelitte as well as simplified map view
 
 ## Development history
 Get places input working on modal

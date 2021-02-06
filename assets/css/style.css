@@ -19,11 +19,6 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 
-
-.four-buttons {
-    width: 100%;
-}
-
 .feature {
 margin: 10px;
 display: contents;
@@ -36,14 +31,13 @@ table {
 .b4main {
 font-weight: 800;
 line-height: 175%;
-/*display: contents;*/
 }
 
 .b4sub {
 font-weight: 600;
 line-height: 100%;
 padding-left: 15px;
-/*display: contents;*/
+
 }
 
 .btn-main {
@@ -52,18 +46,15 @@ padding-left: 15px;
     font-size: 1.1em!important;
 }
 
+/*Buttons*/
+
+.four-buttons {
+    width: 100%;
+}
+
 .btn-lg {
 margin: 0 3px 0 3px;
 }
-
-
-/*button#bakery:active,
-button#bakery:hover,
-button#bakery:focus,
-button#bakery:target{
-    background:blue;
-    color: cornsilk;
-}*/
 
 button:active,
 button:hover,
@@ -73,6 +64,12 @@ button:target{
     color: rgb(255, 255, 255);
 }
 
+.active {
+    color: #fff;
+    background-color: #4CAF50;
+}
+
+/*Search field and Dropdown*/ 
 
 .type-search {
   -webkit-box-align: center;
@@ -87,57 +84,6 @@ button:target{
   top: 0;
   width: 90%;
   z-index: 1;
-}
-
-.type-search-modal {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  left: 0;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-  font-size: 1.5rem;
-  line-height: 2;
-  padding: 1rem 0 1rem;
-}
-
-.what-modal {
-    padding-top: 1.1em;
-}
-
-.where-modal {
-    padding-top: 1.1em;
-}
-
-#map {
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-  margin-top: 8px;
-  width: 60%;
-}
-
-#listing {
-  position: absolute;
-/* ! Width should be 40% - fix styling, essentially a div issue one level up*/
-  font-size: 1.2em;
-  width: 40%;
-  height: 100%;
-  overflow: auto;
-  left: 62%;
-    margin-top: 6px;
-  top: 0px;
-  cursor: pointer;
-  overflow-x: hidden;
-}
-
-#findtype {
-  font-size: 24px;
 }
 
 #locationField {
@@ -158,16 +104,40 @@ button:target{
   font-size: 1em;
 }
 
-#autocompleteModal {
-width: 500px;
-  font-size: 1em;
-}
-
-
 #country {
     width: 100%;
     font-size: 1em;
 }
+
+/*Map*/
+
+#map {
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  margin-top: 8px;
+  width: 60%;
+}
+
+/*Listing*/
+
+#listing {
+  position: absolute;
+  font-size: 1.2em;
+  width: 40%;
+  height: 100%;
+  overflow: auto;
+  left: 62%;
+    margin-top: 6px;
+  top: 0px;
+  cursor: pointer;
+  overflow-x: hidden;
+}
+
+#findtype {
+  font-size: 24px;
+}
+
 
 .placePhoto {
   width: 140px;
@@ -187,12 +157,12 @@ width: 500px;
 }
 
 #resultsTable {
-/* ! Width should be 40% - fix styling, essentially a div issue one level up*/
   border-collapse: collapse;
   width: 100%;
 margin-top: 140px;
-
 }
+
+/*Info card on Map - Google Places*/
 
 #rating {
   font-size: 13px;
@@ -223,28 +193,37 @@ margin-top: 140px;
     z-index: 1051 !important;
 }
 
+/*To be removed before submission*/
 
-/* Button toggle 
-#btnHousing {
-    background-color: rgb(255,242,0);
+/*.type-search-modal {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  font-size: 1.5rem;
+  line-height: 2;
+  padding: 1rem 0 1rem;
 }
 
-#btnHousing.toggled {
-    background-color: rgb(244,113,33);
+.what-modal {
+    padding-top: 1.1em;
+}
+
+.where-modal {
+    padding-top: 1.1em;
+
+
+#autocompleteModal {
+width: 500px;
+  font-size: 1em;
+}
+
+
 }*/
-
-button.selected{
-  color:red;
-}
-
-
-.modal-content {
-    min-width: 600px;
-    border-radius: 1rem!important;
-
-}
-
-.active {
-    color: #fff;
-    background-color: #4CAF50;
-}

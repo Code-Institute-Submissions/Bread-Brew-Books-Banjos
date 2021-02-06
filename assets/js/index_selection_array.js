@@ -12,7 +12,7 @@ const MARKER_PATH =
     "https://developers.google.com/maps/documentation/javascript/images/marker_green";
 const hostnameRegexp = new RegExp("^https?://.+?/");
 
-//Country List
+//Country List - Select Countries
 const countries = {
 all: {
     center: {lat: 15, lng: -25 },
@@ -81,11 +81,11 @@ all: {
 };
 
 
-
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     zoom: countries["all"].zoom,
     center: countries["all"].center,
+  //Optional Google Map code commented out for now
   //mapTypeControl: false,
    // panControl: false,
     //zoomControl: false,
@@ -102,7 +102,6 @@ function initMap() {
   //Add type to selection or remove if selected already//
 function addTypeToSelection () {
    let selectedType = event.target.name;
-
 
 if (!selection.includes(selectedType)) {
    selection = [];
@@ -125,8 +124,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-
-
 document.addEventListener('DOMContentLoaded', () => {
 
     let myBtns=document.querySelectorAll('.active-state__buttons');
@@ -136,18 +133,14 @@ document.addEventListener('DOMContentLoaded', () => {
           myBtns.forEach(b => b.classList.remove('active'));
           btn.classList.add('active');
         });
- 
     });
-
 });
-
 
 
 window.onload = function() {
 let types = document.querySelectorAll(".selected-cat");
 types.forEach(element => element.addEventListener("click",addTypeToSelection));
 }
-  //End Addtype
 
   // Create the autocomplete object and associate it with the UI input control.
   // Restrict the search to the default country, and to place type "cities".
@@ -347,56 +340,22 @@ function buildIWContent(place) {
     document.getElementById("iw-website").textContent = website;
     document.getElementById("iw-website").innerHTML =
         '<u><a href="' + place.url + '">' + website + "</a></u>";
-        //, "_blank" trying to integrate new window
+        //, "_blank" trying to integrate new window _blank for urls
   } else {
     document.getElementById("iw-website-row").style.display = "none";
   }
 }
 
-    // Retrieve photo
-  /*if (place.photo) {
-    let fullUrl = place.website;
-    let website = String(hostnameRegexp.exec(place.website));
-
-    if (!website) {
-      website = "http://" + place.website + "/";
-      fullUrl = website;
-    }
-    document.getElementById("iw-website-row").style.display = "";
-    document.getElementById("iw-website").textContent = website;
-  } else {
-    document.getElementById("iw-website-row").style.display = "none";
-  }*/
-  
-
-
     function toggle_visibility(id) {
        var OKModal = document.getElementById(id);
+       //Modal removed for now
        /*if(OKModal.style.display == 'block')
           OKModal.style.display = 'none';
        else*/
           OKModal.style.display = 'block';
     }
 
-
-//button jquery
-/*
-$("button").click(function(){
-    var color = clicked ? 'red' : 'blue';
-    $(this).css('background-color', color);
-    clicked = !clicked;
-});
-*/
-
-/*function btnColor(btn) {
-var property = document.getElementById(btn);
-    if (property.className !== 'active') {
-        property.className = 'active'
-    }
-    else {
-        property.className = '';
-    }
-}*/
+// Button state change
 
 $('button').on('click', function(){
     $('button').removeClass('active');
