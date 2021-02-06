@@ -4,7 +4,7 @@ let places;
 let infoWindow;
 let markers = [];
 let autocomplete;
-let selection = [];
+let selection;
 let countryRestrict;
 
 //Marker
@@ -101,13 +101,8 @@ function initMap() {
 
   //Add type to selection or remove if selected already//
 function addTypeToSelection () {
-   let selectedType = event.target.name;
-
-if (!selection.includes(selectedType)) {
-   selection = [];
-   selection.push(selectedType);
+   selection = event.target.name;
    search();
-    }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -178,7 +173,7 @@ function onPlaceChanged() {
 function search() {
   const search = {
     bounds: map.getBounds(),
-    types: selection,
+    types: [selection],
   };
   places.nearbySearch(search, (results, status, pagination) => {
     if (status === google.maps.places.PlacesServiceStatus.OK) {
