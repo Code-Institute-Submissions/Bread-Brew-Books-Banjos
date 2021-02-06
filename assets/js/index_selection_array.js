@@ -102,16 +102,7 @@ function initMap() {
   //Add type to selection or remove if selected already//
 function addTypeToSelection () {
    selection = event.target.name;
-   switch (selection) {
-        case "cafe":
-        case "bakery":
-        case "book_store":
-        case "night_club":
-            search();
-            break;
-        default:
-            break;
-   }
+   search();
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -180,6 +171,15 @@ function onPlaceChanged() {
 
 // Search for selected-cat in the selected city, within the viewport of the map.
 function search() {
+  switch (selection) {
+    case "cafe":
+    case "bakery":
+    case "book_store":
+    case "night_club":
+        break;
+    default:
+        return;
+  }
   const search = {
     bounds: map.getBounds(),
     types: [selection],
