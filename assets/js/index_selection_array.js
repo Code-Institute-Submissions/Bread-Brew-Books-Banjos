@@ -102,8 +102,7 @@ function initMap() {
   //Add type to selection or remove if selected already//
 function addTypeToSelection () {
    selection = event.target.name;
-   ac = document.getElementById("autocomplete");
-   if (ac.textContent != "") {
+   if (autocomplete.getPlace()) {
     search();
    }
 }
