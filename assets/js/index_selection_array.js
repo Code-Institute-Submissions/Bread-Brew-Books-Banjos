@@ -201,6 +201,9 @@ function search() {
         setTimeout(dropMarker(i), i * 100);
         addResult(results[i], i);
       }
+      if (results.length == 0) {
+          // Output some HTML content here to display a message that says no results.
+      }
     }
     //else {console.log('<p>No Results</p>')}
   });
