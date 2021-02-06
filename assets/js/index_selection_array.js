@@ -102,7 +102,16 @@ function initMap() {
   //Add type to selection or remove if selected already//
 function addTypeToSelection () {
    selection = event.target.name;
-   search();
+   switch (selection) {
+        case "cafe":
+        case "bakery":
+        case "book_store":
+        case "night_club":
+            search();
+            break;
+        default:
+            break;
+   }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
