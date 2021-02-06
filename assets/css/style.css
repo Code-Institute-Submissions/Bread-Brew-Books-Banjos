@@ -235,3 +235,8 @@ button.selected{
     border-radius: 1rem!important;
 
 }
+
+.active {
+    color: #fff;
+    background-color: #4CAF50;
+}

@@ -30,77 +30,32 @@
 
 <!-- ============================== Modal -->
 
-<!-- Modal on Page Load from https://www.tutorialrepublic.com/codelab.php?topic=faq&file=show-bootstrap-modal-on-page-load -->
 
 
-<div class="modal fade" id="introModal" tabindex="-1" role="dialog" aria-labelledby="introModalLabel" aria-hidden="true" data-backdrop="static">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title" id="introModalLabel"><b>Browse the Best:</b></h1>
-      </div>
-      <div class="modal-body">
-        <!-- Modal content-->
-            <h4>Travel anywhere in the world and explore the four most important things you can do in a city - the 4 B's:
-            <ul>
-                <li>eat Bread</li>
-                <li>drink Brew</li>
-                <li>read Books</li>
-                <li>listen to Banjos*</li>
-            </ul>
-            </h4>
-            <h6>*music may or may not include Banjos</h6>
-            
-            <h4 class="row justify-content-md-center what-modal">What you want to "Be" doing.</h4>
-             <div class ="container four-buttons" >
-                   <div class="row justify-content-md-center">
+
+<!-- Start of Main App-->
+
+    <div class="container-fluid feature">
+        <div class="row-fluid">
+            <h3 class="b4main justify-content-md-center">Browse the Best</h3>
+
                 <div class="active-state__buttons-wrapper">
                     <a href="#" onclick="toggle_visibility('searchfield');"><button type="button" class="active-state__buttons btn-lg btn-bread selected-cat"  name= "bakery"><i class="fas fa-bread-slice"></i> Bread</button></a>
                     <a href="#" onclick="toggle_visibility('searchfield');"><button type="button" class="active-state__buttons btn-lg btn-brew selected-cat" name= "cafe"><i class="fas fa-coffee"></i> Brew </button></a>
                     <a href="#" onclick="toggle_visibility('searchfield');"><button type="button" class="active-state__buttons btn-lg btn-books selected-cat" name= "book_store"><i class="fas fa-book-open"></i> Books</button></a>
                     <a href="#" onclick="toggle_visibility('searchfield');"><button type="button" class="active-state__buttons btn-lg btn-banjos selected-cat" name= "night_club"><i class="fas fa-music"></i> Banjos</button></a> 
                 </div>
-            </div>
         </div>
-            <div id="searchfield" style="display:none">
-                <div class ="container where-modal">
-                    <h4 class="row justify-content-md-center">Where do you want to "Be"?</h4>
+
+                <div class="content-itinerary__buttons-wrapper">
+                    <a href="#" onclick="toggle_visibility('searchfield');"><button type="button" class="content-itinerary__buttons description-text btn-lg btn-bread selected-cat"  name= "bakery"><i class="fas fa-bread-slice"></i> Bread</button></a>
+                    <a href="#" onclick="toggle_visibility('searchfield');"><button type="button" class="content-itinerary__buttons description-text btn-lg btn-brew selected-cat" name= "cafe"><i class="fas fa-coffee"></i> Brew </button></a>
+                    <a href="#" onclick="toggle_visibility('searchfield');"><button type="button" class="content-itinerary__buttons description-text btn-lg btn-books selected-cat" name= "book_store"><i class="fas fa-book-open"></i> Books</button></a>
+                    <a href="#" onclick="toggle_visibility('searchfield');"><button type="button" class="content-itinerary__buttons description-text btn-lg btn-banjos selected-cat" name= "night_club"><i class="fas fa-music"></i> Banjos</button></a> 
                 </div>
-                <div class="justify-content-md-center type-search-modal">
-                    <div id="findtype-modal">
-                    </div>
-                   <div id="locationField-modal">
-                        <input id="autocomplete" placeholder="Enter a city" type="text" />
-                    </div>
-                </div> 
-            </div>
-        <!--End Modal Content-->
 
 
-
-         </div>
-      </div>
-    </div>
-  </div>
-
-
-<!-- Start of Main App-->
-
-  <div class="container-fluid">
-    <div class="feature">
-
-        <div class="col-8 row">
-            <h3 class="col-md-12 b4main justify-content-md-center">Browse the Best</h3>
-                <div class="active-state__buttons-wrapper">
-                    <button type="button" class="active-state__buttons btn-lg btn-bread selected-cat"  name= "bakery"><i class="fas fa-bread-slice"></i> Bread</button>
-                    <button type="button" class="active-state__buttons btn-lg btn-brew selected-cat" name= "cafe"><i class="fas fa-coffee"></i> Brew </button>
-                    <button type="button" class="active-state__buttons btn-lg btn-books selected-cat" name= "book_store"><i class="fas fa-book-open"></i> Books</button>
-                    <button type="button" class="active-state__buttons btn-lg btn-banjos selected-cat" name= "night_club"><i class="fas fa-music"></i> Banjos</button>
-                </div>
-        </div>
-        
-         <div id="listing" class="col-4">
-            <div class="type-search">
+        <div id="searchfield" class="row-fluid type-search inline" style="display:none">
                 <div id="findtype">in:</div>
                 <div id="locationField">
                     <input id="autocomplete" placeholder="Enter a city" type="text" />
@@ -126,10 +81,14 @@
                         </select>
                 </div>
             </div>
+        
+         <div id="listing" class="col-4">
 
-        <table id="resultsTable">
-            <tbody id="results"></tbody>
-        </table>
+            <table id="resultsTable">
+                <tbody id="results"></tbody>
+            </table>
+            <div class = "welcome"> <p>xxx </p></div>
+
         </div>
     
             <div id="map"></div>
@@ -164,7 +123,7 @@
         </div>
         </div>
     </div>
-    </div>
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

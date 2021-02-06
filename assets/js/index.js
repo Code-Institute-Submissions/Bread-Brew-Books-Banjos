@@ -16,8 +16,38 @@ if (!selection.includes(selectedType)) {
    selection = [];
    selection.push(selectedType);
    search();
+    }
 }
-}
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    let myBtns=document.querySelectorAll('.content-itinerary__buttons');
+    myBtns.forEach(function(btn) {
+
+        btn.addEventListener('click', () => {
+          myBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+        });
+ 
+    });
+
+});
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    let myBtns=document.querySelectorAll('.active-state__buttons');
+    myBtns.forEach(function(btn) {
+
+        btn.addEventListener('click', () => {
+          myBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+        });
+ 
+    });
+
+});
 
 
 

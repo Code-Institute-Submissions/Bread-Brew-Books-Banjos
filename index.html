@@ -38,11 +38,16 @@
     <div class="container-fluid feature">
         <div class="row-fluid">
             <h3 class="b4main justify-content-md-center">Browse the Best</h3>
-                <a href="#" onclick="toggle_visibility('searchfield');"><button type="button" class="btn-lg btn-bread selected-cat"  name= "bakery"><i class="fas fa-bread-slice"></i> Bread</button></a>
-                <a href="#" onclick="toggle_visibility('searchfield');"><button type="button" class="btn-lg btn-brew selected-cat" name= "cafe"><i class="fas fa-coffee"></i> Brew </button></a>
-                <a href="#" onclick="toggle_visibility('searchfield');"><button type="button" class="btn-lg btn-books selected-cat" name= "book_store"><i class="fas fa-book-open"></i> Books</button></a>
-                <a href="#" onclick="toggle_visibility('searchfield');"><button type="button" class="btn-lg btn-banjos selected-cat" name= "night_club"><i class="fas fa-music"></i> Banjos</button></a> 
+
+                <div class="active-state__buttons-wrapper">
+                    <a href="#" onclick="toggle_visibility('searchfield');"><button type="button" class="active-state__buttons btn-lg btn-bread selected-cat"  name= "bakery"><i class="fas fa-bread-slice"></i> Bread</button></a>
+                    <a href="#" onclick="toggle_visibility('searchfield');"><button type="button" class="active-state__buttons btn-lg btn-brew selected-cat" name= "cafe"><i class="fas fa-coffee"></i> Brew </button></a>
+                    <a href="#" onclick="toggle_visibility('searchfield');"><button type="button" class="active-state__buttons btn-lg btn-books selected-cat" name= "book_store"><i class="fas fa-book-open"></i> Books</button></a>
+                    <a href="#" onclick="toggle_visibility('searchfield');"><button type="button" class="active-state__buttons btn-lg btn-banjos selected-cat" name= "night_club"><i class="fas fa-music"></i> Banjos</button></a> 
+                </div>
         </div>
+
+
         <div id="searchfield" class="row-fluid type-search inline" style="display:none">
                 <div id="findtype">in:</div>
                 <div id="locationField">
