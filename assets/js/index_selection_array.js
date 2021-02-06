@@ -211,7 +211,7 @@ function search() {
         addResult(results[i], i);
       }
     }
-    //else {console.log(noresults)}
+    //else {console.log('<p>No Results</p>')}
   });
 }
 
