@@ -202,7 +202,7 @@ function search() {
         addResult(results[i], i);
       }
 
-   } else if (status === google.maps.places.PlacesServiceStatus.NOT_FOUND) {
+   } else if (status === "ZERO_RESULTS") {
         clearResults();
         clearMarkers();
         // Output some HTML content here to display a message that says no results.
