@@ -171,15 +171,9 @@ function onPlaceChanged() {
 
 // Search for selected-cat in the selected city, within the viewport of the map.
 function search() {
-  switch (selection) {
-    case "cafe":
-    case "bakery":
-    case "book_store":
-    case "night_club":
-        break;
-    default:
+    if (selection != "cafe" && selection != "bakery" && selection != "book_store" && selection != "night_club") {
         return;
-  }
+    }
   const search = {
     bounds: map.getBounds(),
     types: [selection],
