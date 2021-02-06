@@ -39,6 +39,12 @@ line-height: 175%;
 /*display: contents;*/
 }
 
+.b4sub {
+font-weight: 600;
+line-height: 100%;
+/*display: contents;*/
+}
+
 .btn-main {
     margin-left: 4px!important;
     margin-right: 4px!important;
@@ -65,6 +71,7 @@ button:target{
     background:green;
     color: rgb(255, 255, 255);
 }
+
 
 .type-search {
   -webkit-box-align: center;
@@ -182,7 +189,7 @@ width: 500px;
 /* ! Width should be 40% - fix styling, essentially a div issue one level up*/
   border-collapse: collapse;
   width: 100%;
-margin-top: 62px;
+margin-top: 140px;
 
 }
 

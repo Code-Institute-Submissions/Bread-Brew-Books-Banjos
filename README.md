@@ -122,6 +122,8 @@ This was deployed on GitHub Pages and can be viewed at: <a href="https://charlie
 
 ### Code
 
+- <https://stackoverflow.com/questions/57143671/how-to-add-class-to-buttons-on-click/57143989> Button class js example
+
 #### README
 - <https://github.com/Code-Institute-Solutions/readme-template/blob/master/README.md>
 - <https://www.markdownguide.org/basic-syntax/>

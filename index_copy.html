@@ -34,67 +34,94 @@
 
 
 <!-- Start of Main App-->
-<h3 class="col-md-12 b4main">Browse the Best</h3>
+
 <div class="row">
-  <div class="col-7 inline-block">        
-      <h5 class="b4sub">What do you want to be doing?</h5>  
-      <div class="active-state__buttons-wrapper">
-                    <a href="#" onclick="toggle_visibility('searchfield');"><button type="button" class="active-state__buttons btn-lg btn-bread selected-cat"  name= "bakery"><i class="fas fa-bread-slice"></i> Bread</button></a>
+  <div class="col-sm-8">
+          <div class="active-state__buttons-wrapper">
+                    <a href="#" onclick="toggle_visibility('searchfield');"></a><button type="button" class="active-state__buttons btn-lg btn-bread selected-cat"  name= "bakery"><i class="fas fa-bread-slice"></i> Bread</button></a>
                     <a href="#" onclick="toggle_visibility('searchfield');"><button type="button" class="active-state__buttons btn-lg btn-brew selected-cat" name= "cafe"><i class="fas fa-coffee"></i> Brew </button></a>
                     <a href="#" onclick="toggle_visibility('searchfield');"><button type="button" class="active-state__buttons btn-lg btn-books selected-cat" name= "book_store"><i class="fas fa-book-open"></i> Books</button></a>
                     <a href="#" onclick="toggle_visibility('searchfield');"><button type="button" class="active-state__buttons btn-lg btn-banjos selected-cat" name= "night_club"><i class="fas fa-music"></i> Banjos</button></a> 
-          </div></div>
-  <div class="col-5 inline-block">
-      <div id="searchfield" class="type-search" style="display:none">
-              <h5 class="b4sub">Where will you be?</h5>  
-
-            <div id="locationField">
-                <input id="autocomplete" placeholder="Enter a city" type="text" />
+          </div>
+  </div>
+  <div class="col-sm-4 row-fluid type-search inline">
+ <div id="searchfield" class="row-fluid type-search inline" style="display:none">
+                <div id="findtype">in:</div>
+                <div id="locationField">
+                    <input id="autocomplete" placeholder="Enter a city" type="text" />
+                </div>
+                <div id="controls">
+                        <select id="country">
+                        <option value="all" default>All Countries</option>
+                        <option value="au">Australia</option>
+                        <option value="br">Brazil</option>
+                        <option value="ca">Canada</option>
+                        <option value="fr">France</option>
+                        <option value="de">Germany</option>
+                        <option value="ie">Ireland</option>
+                        <option value="mx">Mexico</option>
+                        <option value="nz">New Zealand</option>
+                        <option value="ng">Nigeria</option>
+                        <option value="it">Italy</option>
+                        <option value="za">South Africa</option>
+                        <option value="es">Spain</option>
+                        <option value="pt">Portugal</option>
+                        <option value="us">U.S.A.</option>
+                        <option value="uk">United Kingdom</option>
+                        </select>
+                </div>
             </div>
-             <div id="controls">
-                            <select id="country">
-                            <option value="all" default>All Countries</option>
-                            <option value="au">Australia</option>
-                            <option value="br">Brazil</option>
-                            <option value="ca">Canada</option>
-                            <option value="fr">France</option>
-                            <option value="de">Germany</option>
-                            <option value="ie">Ireland</option>
-                            <option value="mx">Mexico</option>
-                            <option value="nz">New Zealand</option>
-                            <option value="ng">Nigeria</option>
-                            <option value="it">Italy</option>
-                            <option value="za">South Africa</option>
-                            <option value="es">Spain</option>
-                            <option value="pt">Portugal</option>
-                            <option value="us">U.S.A.</option>
-                            <option value="uk">United Kingdom</option>
-                            </select>
-                    </div>
-         </div>
-    </div>
+
+
+  </div>
 </div>
 
+    <div class="container-fluid feature">
+        <div class="row-fluid">
+            <h3 class="b4main justify-content-md-center">Browse the Best</h3>
+
+                <div class="active-state__buttons-wrapper">
+                    <a href="#" onclick="toggle_visibility('searchfield');"></a><button type="button" class="active-state__buttons btn-lg btn-bread selected-cat"  name= "bakery"><i class="fas fa-bread-slice"></i> Bread</button></a>
+                    <a href="#" onclick="toggle_visibility('searchfield');"><button type="button" class="active-state__buttons btn-lg btn-brew selected-cat" name= "cafe"><i class="fas fa-coffee"></i> Brew </button></a>
+                    <a href="#" onclick="toggle_visibility('searchfield');"><button type="button" class="active-state__buttons btn-lg btn-books selected-cat" name= "book_store"><i class="fas fa-book-open"></i> Books</button></a>
+                    <a href="#" onclick="toggle_visibility('searchfield');"><button type="button" class="active-state__buttons btn-lg btn-banjos selected-cat" name= "night_club"><i class="fas fa-music"></i> Banjos</button></a> 
+                </div>
+        </div>
+
+
+        <div id="searchfield" class="row-fluid type-search inline" style="display:none">
+                <div id="findtype">in:</div>
+                <div id="locationField">
+                    <input id="autocomplete" placeholder="Enter a city" type="text" />
+                </div>
+                <div id="controls">
+                        <select id="country">
+                        <option value="all" default>All Countries</option>
+                        <option value="au">Australia</option>
+                        <option value="br">Brazil</option>
+                        <option value="ca">Canada</option>
+                        <option value="fr">France</option>
+                        <option value="de">Germany</option>
+                        <option value="ie">Ireland</option>
+                        <option value="mx">Mexico</option>
+                        <option value="nz">New Zealand</option>
+                        <option value="ng">Nigeria</option>
+                        <option value="it">Italy</option>
+                        <option value="za">South Africa</option>
+                        <option value="es">Spain</option>
+                        <option value="pt">Portugal</option>
+                        <option value="us">U.S.A.</option>
+                        <option value="uk">United Kingdom</option>
+                        </select>
+                </div>
+            </div>
         
          <div id="listing" class="col-4">
 
             <table id="resultsTable">
                 <tbody id="results"></tbody>
             </table>
-            <div class = "welcome"> 
-                <h4>Travel anywhere in the world and explore the four most important things you can do in a city - the 4 B's:
-            <ul>
-                <li>eat Bread</li>
-                <li>drink Brew</li>
-                <li>read Books</li>
-                <li>listen to Banjos*</li>
-            </ul>
-            </h4>
-            <h6>*music may or may not include Banjos</h6>
-            
-
-
-            </div>
+            <div class = "welcome"> <p>xxx </p></div>
 
         </div>
     
