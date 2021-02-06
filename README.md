@@ -3,17 +3,17 @@
 # <center>Browse the Best: Bread, Brew, Books and Banjos</center>
 
 Browse the Best: Bread, Brew, Books and Banjos allows you to “travel” anywhere in the world 
-and explore the four most important things you can do in a city - the 4 B’s:
-• eat Bread
-• drink Brew 
-• read Books
-• listen to Banjos* (*music may or may not include Banjos)
+and explore the four most important things you can do in a city - the 4 B’s: eat Bread, drink Brew 
+read Books and listen to Banjos* (*music may or may not include Banjos)
 
 Using the power of Google Places API, Browse the Best simplifies Place Searches functionality
-making the experience both **wide**, allowing for a variety of activities and inetrests, but
-also **focused** in that a user can limit the results shown to a specific Place type.
+making the experience both **wide** by allowing for a variety of activities and interests but also **focused** 
+by limitting the scope to four basic things a visitor would likely be interested in.
 
-Each of these categories/activities lend themselves to solo and group associations, further expanding the usefulness of the functionality.
+Essentially, I tried to think of the main things I like to do in a city and getting a coffee and a bite to eat,
+browsing some books and hearing some live music were the top things to do.
+Also, Each of these categories/activities lend themselves to solo and group associations, 
+further expanding the usefulness of the functionality.
 
 ***
 
