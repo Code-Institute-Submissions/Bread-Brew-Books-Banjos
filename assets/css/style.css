@@ -2,12 +2,12 @@
 
 html,
 body {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
-/*-------------------------------------------------------- Fonts*/
+/*-------------------------------------------------------- Fonts */
 
 h1,h2,h3 {
     font-family: 'Poppins', sans-serif;
@@ -21,6 +21,7 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 
+/*-------------------------------------------------------- Header */
 .btb-title {
     font-size: 2.5em;
     padding-top: .76em;
@@ -39,30 +40,30 @@ h1.btb-title {
 }
 
 .feature {
-margin: 10px;
-display: contents;
+    margin: 10px;
+    display: contents;
 }
 
 
 .b4main {
-font-weight: 800;
-line-height: 175%;
+    font-weight: 800;
+    line-height: 175%;
 }
 
 .b4sub {
-font-weight: 600;
-line-height: 100%;
+    font-weight: 600;
+    line-height: 100%;
 }
 
-/*-------------------------------------------------------- Modal*/
+/*-------------------------------------------------------- Modal */
 
 .modal-cat-row {
     margin-top: 1em;
 }
 
 .modal-cats {
-font-size: 1.5em;
-line-height: 1em;
+    font-size: 1.5em;
+    line-height: 1em;
 }
 
 .modal-content {
@@ -75,7 +76,7 @@ line-height: 1em;
     padding-top: 20px;
 }
 
-/*-------------------------------------------------------- Buttons*/
+/*-------------------------------------------------------- Buttons */
 
 .four-buttons {
     width: 100%;
@@ -88,14 +89,12 @@ line-height: 1em;
 }
 
 .btn-lg {
-margin: 0 0px 0 0px;
-min-width: 2em;
-border-radius: 3rem;
-border-bottom-style: dashed;
-font-family: 'Poppins', sans-serif;
-
+    margin: 0 0px 0 0px;
+    min-width: 2em;
+    border-radius: 3rem;
+    border-bottom-style: dashed;
+    font-family: 'Poppins', sans-serif;
 }
-
 
 button {
     width: inherit;
@@ -104,7 +103,7 @@ button {
 
 button:hover {
     background:#ffffff;
-    color: #009148;
+    color: #474747;
 }
 
 button:focus,
@@ -143,16 +142,16 @@ button:target{
 }
 
 #locationField {
-  -webkit-box-flex: 1 1 190px;
-  -ms-flex: 1 1 190px;
-  flex: 1 1 190px;
-  margin: 0 4px;
+    -webkit-box-flex: 1 1 190px;
+    -ms-flex: 1 1 190px;
+    flex: 1 1 190px;
+    margin: 0 4px;
 }
 
 #controls {
-  -webkit-box-flex: 1 1 140px;
-  -ms-flex: 1 1 140px;
-  flex: 1 1 140px;
+    -webkit-box-flex: 1 1 140px;
+    -ms-flex: 1 1 140px;
+    flex: 1 1 140px;
 }
 
 #autocomplete {
@@ -168,103 +167,95 @@ button:target{
 }
 
 .map-results-content {
-padding-left: 2px;
-padding-right: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
-/*-------------------------------------------------------- Map*/
+/*-------------------------------------------------------- Map */
 
 #map {
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-  margin-top: 8px;
-  width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    margin-top: 8px;
+    width: 100%;
 }
 
-/*-------------------------------------------------------- Listing*/
-
-
-table {
-  /*font-size: 21px;*/
-}
+/*-------------------------------------------------------- Listing */
 
 #listing {
-  position: relative;
-  font-size: 1.2em;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  /*left: 62%;*/
-  margin-top: 6px;
-  top: 0px;
-  cursor: pointer;
-  overflow-x: hidden;
+    position: relative;
+    font-size: 1.2em;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    margin-top: 6px;
+    top: 0px;
+    cursor: pointer;
+    overflow-x: hidden;
 }
 
 #findtype {
-  font-size: 24px;
+    font-size: 24px;
 }
 
-
 .placePhoto {
-  width: 140px;
-  height: 100%;
-  margin: 4px;
+    width: 140px;
+    height: 100%;
+    margin: 4px;
 }
 
 .placeIcon {
-  width: 20px;
-  height: 34px;
-  margin: 4px;
+    width: 20px;
+    height: 34px;
+    margin: 4px;
 }
 
 .typeIcon {
-  width: 36px;
-  height: 36px;
+    width: 36px;
+    height: 36px;
 }
 
 #resultsTable {
-  position: relative;
-  border-collapse: collapse;
-  width: 100%;
-  /*margin-top: 110px;*/
+    position: relative;
+    border-collapse: collapse;
+    width: 100%;
 }
 
 .welcome {
-  position: relative;
+    position: relative;
 }
 
 .search-tip {
-  position: relative;
-  margin-top: 1em;
+    position: relative;
+    margin-top: 1em;
 }
 
 /*-------------------------------------------------------- Info card on Map - Google Places*/
 
 #rating {
-  font-size: 13px;
-  font-family: Arial Unicode MS;
+    font-size: 13px;
+    font-family: Arial Unicode MS;
 }
 
 .iw_table_row {
-  height: 18px;
+    height: 18px;
 }
 
 .iw_attribute_name {
-  font-weight: bold;
-  text-align: right;
+    font-weight: bold;
+    text-align: right;
 }
 
 .iw_table_icon {
-  text-align: right;
+    text-align: right;
 }
 
 .iw_photo_image {
-  height: 100%;
+    height: 100%;
 }
 
-/* Auto complete form */
+/*-------------------------------------------------------- Auto complete form */
 .pac-container {
     border-color: #aeecff;
     background-color: #dff6ff;

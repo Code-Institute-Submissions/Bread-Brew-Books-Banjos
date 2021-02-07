@@ -4,16 +4,14 @@
 
 Browse the Best: Bread, Brew, Books and Banjos allows you to “travel” anywhere in the world 
 and explore the four most important things you can do in a city - the 4 B’s: eat Bread, drink Brew 
-read Books and listen to Banjos* (*music may or may not include Banjos)
+read Books and hear Banjos* (*music may or may not include Banjos). :)
 
 Using the power of Google Places API, Browse the Best simplifies Place Searches functionality
-making the experience both **wide** by allowing for a variety of activities and interests but also **focused** 
+making the experience both **wide** — by allowing for a variety of activities and interests, but also **focused** 
 by limitting the scope to four basic things a visitor would likely be interested in.
 
-Essentially, I tried to think of the main things I like to do in a city and getting a coffee and a bite to eat,
-browsing some books and hearing some live music were the top things to do.
-Also, Each of these categories/activities lend themselves to solo and group associations, 
-further expanding the usefulness of the functionality.
+Essentially, I tried to think of the main things peole might like to do in a city and getting a coffee and a bite to eat,
+browsing some books and hearing live music were the top things to do. Also, Each of these categories/activities lend themselves to solo and group associations, further expanding the usefulness of the functionality.
 
 ***
 
@@ -42,39 +40,54 @@ further expanding the usefulness of the functionality.
 ## Design
 
 - ### Branding 
-Alliteration of the B sound - Browse the Best to frame the offering, that the user will get to dynamically search for and explore offerings
-Reinforced by the further B alliteration of the four "B" categories which offer variety and specificity
+    - Alliteration of the B sound in both website name and the Search Options: Browse the Best, Bread, Brew, Books and Banjos
+    - Clean, simple - using iconography for the four categories
 
 - ### Colours
+    - Following the Green theme of the Google Places API, using green as the key Colour
+    - Otherwise clean black and white allowing the Map and Results to stand out
 
 - ### UI
-
+    - Clean, simple UI
+    - 2 column layout for Map and results on larger screens
+    - 1 column layout on smaller devices
 
 - #### Typography
-
+    - Poppins font for bolder, larger text
+    - Open Sans for body and smaller text.
+    - Sans Serif as the fallback if fonts aren't imported correctly.
 
 - #### Imagery
+    - Google Maps provides literally a window to the world through the Map
+    - Using the optional Google Map UI and layer options so user can opt to look at topography
 
 - #### Wireframes
+    - 
+    -
 
 ## Features
 
-* Intro Module
-* Header - Identity
-* Four B Buttons - Category Selections
-* Map - default and dynamic states
-* Search results
-* Responsivity - Responsive across devices - allowing same experience, two column layout
+* Intro Modal provides introduction, explaining the "pick a type" and "choose a location" steps.
+* Modal is easily x-ed out or skipped vis the Start Browsing button.
+* Header - Identity, Type Buttons and Search field with optiona Country Drop Down
+* Country Dropdown allows for restricted city autocomplete by country
+* Map - default and dynamic states, user can zoom and search within Map
+* Search results - allow user to move to location by clicking on markers
+* Map Markers - allow user to see more information on result including url hyperlink to website (if available)
+* Responsivity - Responsive across devices - allowing one and two column layouts
 * Google Map layers allows user to looka t satelitte as well as simplified map view
 
 ## Features to be added 
 
+* Would like to develop branding and ideally bring the FontAwesome icons as makers onto maps
+* Would also like to explore a four-color code, similar to initial wireframes
 * Refine some results - Google Places groups some establishments I'd rather filter out such as "bookmakers" for "book_stores"
-* Likewise add explicit keywords to types and search function
-
+* Likewise would add explicit keywords to types and search function
+* Would look at additional styling of map - https://mapstyle.withgoogle.com/
+* May also bring some Places Photos images into the results table, and/or on the Map Marker Info Boxes
 
 ## Development history
-Google API
+* I was intrigued by Google Places and Map API from the Code
 Get places input working on modal
 get active state as toggle regardless of focus
 add favico
@@ -113,6 +126,7 @@ Allowed for zooming and used that feature as a suggestion for addressing null re
 * [Favicon.ico](https://favicon.io/favicon-converter/) - website for creating favicon 
 * [Google Places API](https://cloud.google.com/maps-platform/places/) - to access and retrieve results data from Google's millions of Place Locations
 * [Google Maps API](http://cloud.google.com/maps-platform/) - to display map
+* [Google Developer] (https://console.developers.google.com/) - to access Google APIs
 
 
 ## Testing
@@ -147,7 +161,7 @@ This was deployed on GitHub Pages and can be viewed at: <a href="https://charlie
 ### Content
 
 ### Code
-
+- <https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch#maps_places_autocomplete_hotelsearch-javascript> - Place Autocomplete Hotel Search as example of using API
 - <https://stackoverflow.com/questions/57143671/how-to-add-class-to-buttons-on-click/57143989> Button class js example
 - <https://getbootstrap.com/docs/4.0/components/modal/> Bootstrap Modal
 
@@ -168,12 +182,13 @@ This was deployed on GitHub Pages and can be viewed at: <a href="https://charlie
 - Took advice from MS1 PREPARATION CALL pdf regarding Validation links
 
 #### Hints 
-- Took Add class to cicked buttons form Stack Overflow link <https://stackoverflow.com/questions/57143671/how-to-add-class-to-buttons-on-click/57143989> and 
+- Took Add class to cicked buttons example form Stack Overflow link <https://stackoverflow.com/questions/57143671/how-to-add-class-to-buttons-on-click/57143989> and also referred to
 <https://stackoverflow.com/questions/57143671/how-to-add-class-to-buttons-on-click/57143941>
 - 
 
-### Acknowledgelmets
-* Ignatius and Damian
+### Acknowledgelments
+* My mentor Ignatius and my friend and former colleague Damian both offered encouragement, hints and insight
+* The Code Institute MS2 Example Project "Holiday Planner" by Ben Hasselgren served as an example of MS2 Project fulfillment.
 
 ### Disclaimer
 This website was created for educational purposes only. 
@@ -182,12 +197,7 @@ This website was created for educational purposes only.
 <https://www.tutorialrepublic.com/codelab.php?topic=faq&file=show-bootstrap-modal-on-page-load>
 
 
-not using searchBox as want the buttons to do the work of sorting type and simplifying experience
-so search is just where and button os the What
 
-may us type and keyword for results so as to capture live music, etc.
-
-trying to restyle the map, have it hooked-up but not seeing the updated style. will se aside -https://mapstyle.withgoogle.com/
 
 need to adjust countries and categories
 set defaults to ireland
