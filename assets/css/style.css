@@ -52,6 +52,7 @@ padding-left: 15px;
 
 .btn-lg {
 margin: 0 3px 0 3px;
+min-width: 4.5em
 }
 
 button:hover,

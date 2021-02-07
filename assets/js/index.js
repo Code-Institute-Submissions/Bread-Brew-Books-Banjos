@@ -209,9 +209,9 @@ function search() {
         clearMarkers();
         // Output some HTML content here to display a message that says no results.
         const results = document.getElementById("results");
-        h1 = document.createElement("h1");
-        h1.textContent = "No results here!";
-        results.appendChild(h1);
+        h3 = document.createElement("h3");
+        h3.textContent = "No results here!";
+        results.appendChild(h3);
    }
   });
 }
