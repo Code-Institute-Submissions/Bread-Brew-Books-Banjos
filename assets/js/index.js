@@ -159,7 +159,7 @@ types.forEach(element => element.addEventListener("click",addTypeToSelection));
 // When the user selects a city, get the place details for the city and
 // zoom the map in on the city.
 function onPlaceChanged() {
-    $("#introModal").modal('hide');
+    // not using $("#introModal").modal('hide');
   const place = autocomplete.getPlace();
 
   if (place.geometry) {

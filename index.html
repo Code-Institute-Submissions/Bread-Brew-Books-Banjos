@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
    
     
-    <!--Modal JS
+ <!-- ============================== Modal JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -26,39 +26,49 @@
 </script>
 
 
-ModalEnd-->
-
-
-
-<!-- ============================== Modal -->
-
   </head>
   <body>
 
+    <!-- ============================== Modal -->
+
+<!-- Modal on Page Load from https://www.tutorialrepublic.com/codelab.php?topic=faq&file=show-bootstrap-modal-on-page-load -->
+
+
+<div class="modal fade" id="introModal" tabindex="-1" role="dialog" aria-labelledby="introModalLabel" aria-hidden="true" data-backdrop="static">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title" id="introModalLabel"><b>Browse the Best:</b></h1>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+            <!-- Modal content-->
+                <h4>Travel anywhere in the world and explore the four most important things you can do in a city - the 4 B's:
+                    <ul>
+                        <li>eat Bread</li>
+                        <li>drink Brew</li>
+                        <li>read Books</li>
+                        <li>listen to Banjos*</li>
+                    </ul>
+                </h4>
+                <h6>*music may or may not include Banjos</h6>
+                <h4>Just choose your "B" and where you want to be!</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!--End Modal Content-->
 
 
 <!-- Start of Main App-->
 
-<div class="container">
-  <div class="row">
-    <div class="col-sm">
-      One of three columns
-    </div>
-    <div class="col-sm">
-      One of three columns
-    </div>
-    <div class="col-sm">
-      One of three columns
-    </div>
-  </div>
-</div>
-
 <div class="container-flex">
   <div class="row">
-    <div class="col-md-12 justify-content-center text-center d-flex ">
+    <div class="col-md-2 justify-content-center text-center d-flex ">
         <h1 class="btb-title">Browse the Best</h1>
     </div>
-    <div class="col-md-12 justify-content-center text-center active-state__buttons-wrapper align-middle">
+    <div class="col-md justify-content-center text-center active-state__buttons-wrapper align-middle">
          <button type="button" class="active-state__buttons btn-lg btn-bread selected-cat"  name= "bakery">
             <i class="fas fa-bread-slice"></i><br>
             Bread
@@ -76,7 +86,7 @@ ModalEnd-->
              Banjos
         </button>
     </div>
-    <div id="searchfield" class="col-md-12 d-flex justify-content-center text-center type-search b4sub">
+    <div id="searchfield" class="col-md d-flex justify-content-center text-center type-search b4sub">
     <div id="locationField">
         <input id="autocomplete" placeholder="Enter a city" type="text" />
     </div>
