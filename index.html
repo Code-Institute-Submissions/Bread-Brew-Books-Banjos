@@ -40,20 +40,54 @@ ModalEnd-->
 
 <div class="container">
   <div class="row">
-    <div class="col-lg-3 align-content-center">
-Logo
+    <div class="col-sm-2 d-flex ">
+<h1 class="col-md-12">Browse the Best</h1>
     </div>
-    <div class="col-lg-5 align-content-center">
-Buttons
+    <div class="col-sm-7 d-flex justify-content-center text-center active-state__buttons-wrapper">
+                    <button type="button" class="active-state__buttons btn-lg btn-bread selected-cat"  name= "bakery">
+                        <i class="fas fa-bread-slice"></i><br>
+                        Bread
+                    </button>
+                    <button type="button" class="active-state__buttons btn-lg btn-brew selected-cat" name= "cafe">
+                        <i class="fas fa-coffee"></i><br>
+                        Brew </button>
+                    <button type="button" class="active-state__buttons btn-lg btn-books selected-cat" name= "book_store">
+                        <i class="fas fa-book-open"></i><br>
+                        Books</button>
+                    <button type="button" class="active-state__buttons btn-lg btn-banjos selected-cat" name= "night_club">
+                        <i class="fas fa-music"></i><br>
+                        Banjos</button>
     </div>
-    <div class="col-lg-4 align-content-center">
-search
+    <div id="searchfield" class="col-sm-3 d-flex justify-content-center text-center type-search b4sub">
+ <div id="locationField">
+                <input id="autocomplete" placeholder="Enter a city" type="text" />
+            </div>
+             <div id="controls" class="b4sub">
+                            <select id="country">
+                            <option value="all">All Countries</option>
+                            <option value="au">Australia</option>
+                            <option value="br">Brazil</option>
+                            <option value="ca">Canada</option>
+                            <option value="fr">France</option>
+                            <option value="de">Germany</option>
+                            <option value="ie">Ireland</option>
+                            <option value="mx">Mexico</option>
+                            <option value="nz">New Zealand</option>
+                            <option value="ng">Nigeria</option>
+                            <option value="it">Italy</option>
+                            <option value="za">South Africa</option>
+                            <option value="es">Spain</option>
+                            <option value="pt">Portugal</option>
+                            <option value="us">U.S.A.</option>
+                            <option value="uk">United Kingdom</option>
+                            </select>
+                    </div>
     </div>
   </div>
 </div>
 
-
-<h3 class="col-md-12 b4main">Browse the Best <span class="b4sub"><em></em></span></h3>
+<!-- Old Header
+<h3 class="col-md-12 b4main">Browse the Best <span class="b4sub"></span></h3>
 
 <div class="row">
   <div class="col-7 inline-block">        
@@ -100,7 +134,7 @@ search
          </div>
     </div>
 </div>
-
+-->
         
          <div id="listing" class="col-4">
 
