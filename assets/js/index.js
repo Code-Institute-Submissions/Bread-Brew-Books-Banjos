@@ -1,4 +1,4 @@
-// Modified Places Autocomplete Hotel Search sample from: https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch#maps_places_autocomplete_hotelsearch-javascript
+    // Modified Places Autocomplete Hotel Search sample from: https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch#maps_places_autocomplete_hotelsearch-javascript
 let map;
 let places;
 let infoWindow;
@@ -7,80 +7,80 @@ let autocomplete;
 let selection;
 let countryRestrict;
 
-//Marker
+    //Marker
 const MARKER_PATH =
     "https://developers.google.com/maps/documentation/javascript/images/marker_green";
 const hostnameRegexp = new RegExp("^https?://.+?/");
 
-//Country List - Select Countries
+    //Country List - Select Countries - Including a few countries beyond Google's suggested default list
 const countries = {
-all: {
-    center: {lat: 15, lng: -25 },
-    zoom: 2.5,
-},
-  au: {
-    center: { lat: -25.3, lng: 133.8 },
-    zoom: 4.4,
-  },
-  br: {
-    center: { lat: -25, lng: -56.5 },
-    zoom: 4.5,
-  },
-  ca: {
-    center: { lat: 50, lng: -100.0 },
-    zoom: 4,
-  },
-  fr: {
-    center: { lat: 46.2, lng: 2.2 },
-    zoom: 6,
-  },
-  de: {
-    center: { lat: 50, lng: 10.4 },
-    zoom: 6,
-  },
-  mx: {
-    center: { lat: 10.6, lng: -102.5 },
-    zoom: 5,
-  },
-    nz: {
-    center: { lat: -42.9, lng: 173 },
-    zoom: 6,
-  },
-    ng: {
-    center:  { lat: 9.1, lng: 8.8},
-    zoom: 6.2,
-  },
-  ie: {
-    center: { lat: 53.1, lng: -7.95 },
-    zoom: 7.5,
-  },
-  it: {
-    center: { lat: 40, lng: 12.6 },
-    zoom: 6.4,
-  },
-  za: {
-    center: { lat: -30.6, lng: 22.9 },
-    zoom: 5.8,
-  },
-  es: {
-    center: { lat: 35.5, lng: -3.7 },
-    zoom: 6,
-  },
-  pt: {
-    center: { lat: 39.4, lng: -8 },
-    zoom: 7.2,
-  },
-  us: {
-    center: { lat: 22.1, lng: -90.7 },
-    zoom: 4.1,
-  },
-  uk: {
-    center: { lat: 54.2, lng: -2.6 },
-    zoom: 6.5,
-  },
+    all: {
+        center: {lat: 15, lng: -25 },
+        zoom: 2.5,
+    },
+    au: {
+        center: { lat: -25.3, lng: 133.8 },
+        zoom: 4.4,
+    },
+    br: {
+        center: { lat: -25, lng: -56.5 },
+        zoom: 4.5,
+    },
+    ca: {
+        center: { lat: 50, lng: -100.0 },
+        zoom: 4,
+    },
+    fr: {
+        center: { lat: 46.2, lng: 2.2 },
+        zoom: 6,
+    },
+    de: {
+        center: { lat: 50, lng: 10.4 },
+        zoom: 6,
+    },
+    mx: {
+        center: { lat: 10.6, lng: -102.5 },
+        zoom: 5,
+    },
+        nz: {
+        center: { lat: -42.9, lng: 173 },
+        zoom: 6,
+    },
+        ng: {
+        center:  { lat: 9.1, lng: 8.8},
+        zoom: 6.2,
+    },
+    ie: {
+        center: { lat: 53.1, lng: -7.95 },
+        zoom: 7.5,
+    },
+    it: {
+        center: { lat: 40, lng: 12.6 },
+        zoom: 6.4,
+    },
+    za: {
+        center: { lat: -30.6, lng: 22.9 },
+        zoom: 5.8,
+    },
+    es: {
+        center: { lat: 35.5, lng: -3.7 },
+        zoom: 6,
+    },
+    pt: {
+        center: { lat: 39.4, lng: -8 },
+        zoom: 7.2,
+    },
+    us: {
+        center: { lat: 22.1, lng: -90.7 },
+        zoom: 4.1,
+    },
+    uk: {
+        center: { lat: 54.2, lng: -2.6 },
+        zoom: 6.5,
+    },
 };
 
-
+    //Call for Map
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     zoom: countries["all"].zoom,
@@ -100,21 +100,7 @@ function addTypeToSelection () {
    }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-
-    let myBtns=document.querySelectorAll('.content-itinerary__buttons');
-    myBtns.forEach(function(btn) {
-
-        btn.addEventListener('click', () => {
-          myBtns.forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
-        });
- 
-    });
-
-});
-
- //Found and adapted code form Stack Overflow post - see Readme Hints section
+    //Found and adapted code form Stack Overflow post - https://stackoverflow.com/questions/57143671/how-to-add-class-to-buttons-on-click/57143941
 document.addEventListener('DOMContentLoaded', () => {
 
     let myBtns=document.querySelectorAll('.active-state__buttons');
@@ -127,10 +113,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+    //Show Modal function - https://getbootstrap.com/docs/4.0/components/modal/
  $(document).ready(function(){
      $("#introModal").modal('show');
  });
 
+    //Adding selected category / type to selection
 window.onload = function() {
 let types = document.querySelectorAll(".selected-cat");
 types.forEach(element => element.addEventListener("click",addTypeToSelection));
@@ -153,8 +141,8 @@ types.forEach(element => element.addEventListener("click",addTypeToSelection));
     .addEventListener("change", setAutocompleteCountry);
 }
 
-// When the user selects a city, get the place details for the city and
-// zoom the map in on the city.
+    // When the user selects a city, get the place details for the city and
+    // zoom the map in on the city.
 function onPlaceChanged() {
     const place = autocomplete.getPlace();
 
@@ -198,17 +186,17 @@ function search() {
         google.maps.event.addListener(markers[i], "click", showInfoWindow);
         setTimeout(dropMarker(i), i * 100);
         addResult(results[i], i);
-      }
+    }
 
-   } else if (status === "ZERO_RESULTS") {
-        clearResults();
-        clearMarkers();
-        // Output some HTML content here to display a message that says no results.
-        const results = document.getElementById("results");
-        h3 = document.createElement("h3");
-        h3.textContent = "No results here!";
-        results.appendChild(h3);
-   }
+      //Utilizing PlacesServiceStatus constant to print a message when no results are found.
+         } else if (status === "ZERO_RESULTS") {
+            clearResults();
+            clearMarkers();
+            const results = document.getElementById("results");
+            h3 = document.createElement("h3");
+            h3.textContent = "No results here!";
+            results.appendChild(h3);
+         }
   });
 }
 
@@ -349,15 +337,6 @@ function buildIWContent(place) {
     document.getElementById("iw-website-row").style.display = "none";
   }
 }
-
-    function toggle_visibility(id) {
-       var OKModal = document.getElementById(id);
-       //Modal removed for now
-       /*if(OKModal.style.display == 'block')
-          OKModal.style.display = 'none';
-       else*/
-          OKModal.style.display = 'block';
-    }
 
 // Button state change
 

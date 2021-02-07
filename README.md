@@ -96,6 +96,8 @@ Upon investigation it was determined that this occurred when the selection had a
 I got advice from a former colleague that by restricting the search function to only the four keyword type I wanyed, this could be avoided.
 (cafe, bakery, book_store and night_club)
 
+Allowed for zooming and used that feature as a suggestion for addressing null returns.
+
 
 ## Technologies Used
 
@@ -147,6 +149,7 @@ This was deployed on GitHub Pages and can be viewed at: <a href="https://charlie
 ### Code
 
 - <https://stackoverflow.com/questions/57143671/how-to-add-class-to-buttons-on-click/57143989> Button class js example
+- <https://getbootstrap.com/docs/4.0/components/modal/> Bootstrap Modal
 
 #### README
 - <https://github.com/Code-Institute-Solutions/readme-template/blob/master/README.md>
@@ -165,7 +168,8 @@ This was deployed on GitHub Pages and can be viewed at: <a href="https://charlie
 - Took advice from MS1 PREPARATION CALL pdf regarding Validation links
 
 #### Hints 
-- Took Add class to cicked buttons form Stack Overflow link <https://stackoverflow.com/questions/57143671/how-to-add-class-to-buttons-on-click/57143989>
+- Took Add class to cicked buttons form Stack Overflow link <https://stackoverflow.com/questions/57143671/how-to-add-class-to-buttons-on-click/57143989> and 
+<https://stackoverflow.com/questions/57143671/how-to-add-class-to-buttons-on-click/57143941>
 - 
 
 ### Acknowledgelmets
