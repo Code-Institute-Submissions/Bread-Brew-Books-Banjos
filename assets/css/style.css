@@ -24,9 +24,6 @@ margin: 10px;
 display: contents;
 }
 
-table {
-  font-size: 21px;
-}
 
 .b4main {
 font-weight: 800;
@@ -40,16 +37,17 @@ padding-left: 15px;
 
 }
 
-.btn-main {
-    margin-left: 4px!important;
-    margin-right: 4px!important;
-    font-size: 1.1em!important;
-}
 
 /*Buttons*/
 
 .four-buttons {
     width: 100%;
+}
+
+.btn-main {
+    margin-left: 4px!important;
+    margin-right: 4px!important;
+    font-size: 1.1em!important;
 }
 
 .btn-lg {
@@ -120,6 +118,11 @@ button:target{
 
 /*Listing*/
 
+
+table {
+  font-size: 21px;
+}
+
 #listing {
   position: absolute;
   font-size: 1.2em;
@@ -127,7 +130,7 @@ button:target{
   height: 100%;
   overflow: auto;
   left: 62%;
-    margin-top: 6px;
+  margin-top: 6px;
   top: 0px;
   cursor: pointer;
   overflow-x: hidden;
@@ -158,7 +161,11 @@ button:target{
 #resultsTable {
   border-collapse: collapse;
   width: 100%;
-margin-top: 140px;
+  margin-top: 110px;
+}
+
+.search-tip {
+    margin-top: 1em;
 }
 
 /*Info card on Map - Google Places*/
