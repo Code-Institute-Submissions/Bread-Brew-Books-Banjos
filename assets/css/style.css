@@ -143,7 +143,7 @@ table {
 }
 
 #listing {
-  position: absolute;
+  position: relative;
   font-size: 1.2em;
   width: 40%;
   height: 100%;
@@ -178,13 +178,19 @@ table {
 }
 
 #resultsTable {
+  position: relative;
   border-collapse: collapse;
   width: 100%;
-  margin-top: 110px;
+  /*margin-top: 110px;*/
+}
+
+.welcome {
+  position: relative;
 }
 
 .search-tip {
-    margin-top: 1em;
+  position: relative;
+  margin-top: 1em;
 }
 
 /*Info card on Map - Google Places*/
