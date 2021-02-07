@@ -19,6 +19,16 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 
+.btb-title {
+    font-size: 2.5em;
+}
+
+@media only screen and (max-width: 500px) {
+h1.btb-title {
+    font-size: 5em;
+    }
+}
+
 .feature {
 margin: 10px;
 display: contents;
