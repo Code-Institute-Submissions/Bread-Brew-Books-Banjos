@@ -103,8 +103,8 @@ button {
 }
 
 button:hover {
-    background:fff#ffffff;
-    color: #7e7e7e;
+    background:#ffffff;
+    color: #009148;
 }
 
 button:focus,
