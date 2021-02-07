@@ -85,6 +85,10 @@ button:target{
     background-color: #00a223;
 }
 
+.active-state__buttons-wrapper {
+    position: relative;
+}
+
 /*Search field and Dropdown*/ 
 
 .type-search {
