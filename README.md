@@ -85,32 +85,30 @@ browsing some books and hearing live music were the top things to do. Also, Each
 * Likewise would add explicit keywords to types and search function
 * Would look at additional styling of map - https://mapstyle.withgoogle.com/
 * May also bring some Places Photos images into the results table, and/or on the Map Marker Info Boxes
+* I would also like to return to looking at integrating the search and select functions into an introductory modal.
 
 ## Development history
-* I was intrigued by Google Places and Map API from the Code
-Get places input working on modal
-get active state as toggle regardless of focus
-add favico
-styling 
-readme
+* I was intrigued by Google Places and Map API from the Code Institute module, however I found it difficult to integrate.
+* I knew the API would have some excellent functionality and a wealth of data to access, so I chose to go forward with it for my project.
+* Once I had the API working and results returning, I began to imagine a range of things I could do with it.
+* I was happy that the simplification of the search types still allowed for an interesting searching experience
 
 ## Debugging
 
-The initial plan was to ask user to choose a type and location on the modal. 
-However, the autocomplete function could not be re-used in two places, so I reconfigured back into the main app.
+* Autocomplete
+    - The initial plan was to ask user to choose a type and location on the modal. 
+    - However, the autocomplete function could not be re-used in two places, so I reconfigured back into the main app.
 
-The Google Places API defaulted to "lodging" type if a place was not specified
-Initially I thought that by restricting the search from occurring until after one of our four types, this could be avoided.
-I had this secondary step occurring in the modal initially, and then on index when modal was removed.
-I hid the city/country inputs until after a button had an active state.
-However, I was still seeing occassional "lodging" results.
-Upon investigation it was determined that this occurred when the selection had an "undefined" state - even though a button was active.
-
-I got advice from a former colleague that by restricting the search function to only the four keyword type I wanyed, this could be avoided.
-(cafe, bakery, book_store and night_club)
+* Undefined selection
+    - The Google Places API defaulted to "lodging" type if a place was not specified
+    - Initially I thought that by restricting the search from occurring until after one of our four types, this could be avoided.
+    - I had this secondary step occurring in the modal initially, and then on index when modal was removed.
+    - I hid the city/country inputs until after a button had an active state.
+    - However, I was still seeing occassional "lodging" results.
+    - Upon investigation it was determined that this occurred when the selection had an "undefined" state - even though a button was active.
+    - I got advice from a former colleague that by restricting the search function to only the four keyword type I wanyed, this could be avoided. (cafe, bakery, book_store and night_club)
 
 Allowed for zooming and used that feature as a suggestion for addressing null returns.
-
 
 ## Technologies Used
 
@@ -131,19 +129,47 @@ Allowed for zooming and used that feature as a suggestion for addressing null re
 
 ## Testing
 
+- Modal
+    * Loaded page to test modal always appears
+    * Closed modal using X-button as well as Get Started Button
+
+- Type Selection Buttons
+    * Clicked on each of the four type buttons to verify hover and active states appear
+    * Checked the selection return in Googe Chrome Console to assure that the appropriate selection type was being returned on click
+
+- City Search Field -
+    * Checked city autocomplete to verify functionality
+    * Checked autocomplete in ALL COUNTRIES mode to assure that the country restrictions were not in effect
+    * Checked autocomplete in SPECIFIC COUNTRY mode to assure that the spedific country restriction WERE in effect
+
+- Map Testing -
+    * Ran searches to assure the Map was drawing the correct coordinates
+    * Tested Map functionality to test zoom and scroll functionality
+    * Tested Google functionality including Street View and Full Screen 
+
+- New Search with New coordinates
+    * Zoomed and scrolled within Map, and re-ran searches to test Search function obeyed new coordinates
+
+- No Results -
+    * Tested specific locations which are known to lack Type Returns to test that the No Results message appeared
+
 - NEED TO TEST using:
     * Responsive devices on Google Developer Tools
     * iPhone 5S & 6 and iPad Pro
     * OSX Browsers: Chrome, Safari, Firefox, Opera, Edge
     * Windows Browsers: Chrome, Edge, Explorer, Firefox
+    (some styling yweaks still needed for Galaxy Fold)
 
-- Testing included looking at each section and functionality (anchor links, external links, galleries and forms) to ensure all is working optimally and properly
-
-- NEED TO TEST with validation checks:
+- NEED TO RE-TEST with validation checks - initial tests passed but code has been altered:
     * https://validator.w3.org/ - 
     * https://html5.validator.nu/ - 
     * https://color.a11y.com/Contrast/ -
     * https://jigsaw.w3.org/css-validator/ -
+    * https://jshint.com/ -
+
+## Known issues -
+    * There may be a browser/cache related issue where the website fails to return results on first attempt.
+    * Re-clicking the selected Type Button has always rectified the issue. Still, I would like to further debug this.
 
 ## Deployment
 
