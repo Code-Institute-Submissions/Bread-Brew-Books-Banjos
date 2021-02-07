@@ -133,6 +133,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+ $(document).ready(function(){
+     $("#introModal").modal('show');
+ });
 
 window.onload = function() {
 let types = document.querySelectorAll(".selected-cat");
