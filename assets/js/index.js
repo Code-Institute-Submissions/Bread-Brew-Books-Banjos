@@ -337,12 +337,3 @@ function buildIWContent(place) {
     document.getElementById("iw-website-row").style.display = "none";
   }
 }
-
-// Button state change
-
-$('button').on('click', function(){
-    $('button').removeClass('active');
-    $(this).addClass('active');
-});
-
-
