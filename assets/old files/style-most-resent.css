@@ -1,11 +1,13 @@
+/*-------------------------------------------------------- General */
+
 html,
 body {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
-/*Fonts*/
+/*-------------------------------------------------------- Fonts*/
 
 h1,h2,h3 {
     font-family: 'Poppins', sans-serif;
@@ -14,30 +16,30 @@ h1,h2,h3 {
 h4,h5,h6 {
     font-family: 'Open Sans', sans-serif;
 }
+
 p {
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;
 }
 
 .feature {
-margin: 10px;
-display: contents;
+    margin: 10px;
+    display: contents;
 }
 
 table {
-  font-size: 21px;
+    font-size: 21px;
 }
 
 .b4main {
-font-weight: 800;
-line-height: 175%;
+    font-weight: 800;
+    line-height: 175%;
 }
 
 .b4sub {
-font-weight: 600;
-line-height: 100%;
-padding-left: 15px;
-
+    font-weight: 600;
+    line-height: 100%;
+    padding-left: 15px;
 }
 
 .btn-main {
@@ -46,7 +48,7 @@ padding-left: 15px;
     font-size: 1.1em!important;
 }
 
-/*Buttons*/
+/*-------------------------------------------------------- Buttons*/
 
 .four-buttons {
     width: 100%;
@@ -68,7 +70,7 @@ button:target{
     background-color: #4CAF50;
 }
 
-/*Search field and Dropdown*/ 
+/*-------------------------------------------------------- Search field and Dropdown*/ 
 
 .type-search {
   -webkit-box-align: center;
@@ -108,7 +110,7 @@ button:target{
     font-size: 1em;
 }
 
-/*Map*/
+/*-------------------------------------------------------- Map*/
 
 #map {
   height: 100%;
@@ -118,7 +120,7 @@ button:target{
   width: 60%;
 }
 
-/*Listing*/
+/*-------------------------------------------------------- Listing*/
 
 #listing {
   position: absolute;
