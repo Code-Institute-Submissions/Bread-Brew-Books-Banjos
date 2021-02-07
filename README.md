@@ -74,6 +74,7 @@ Reinforced by the further B alliteration of the four "B" categories which offer 
 
 
 ## Development history
+Google API
 Get places input working on modal
 get active state as toggle regardless of focus
 add favico
@@ -94,6 +95,8 @@ readme
 * [Google Fonts](https://fonts.google.com/) - open source web font collection
 * [Google Maps](https://www.google.com/maps) - online mapping resource with embed code
 * [Favicon.ico](https://favicon.io/favicon-converter/) - website for creating favicon 
+* [Google Places API](https://cloud.google.com/maps-platform/places/) - to access and retrieve results data from Google's millions of Place Locations
+* [Google Maps API](http://cloud.google.com/maps-platform/) - to display map
 
 
 ## Testing
