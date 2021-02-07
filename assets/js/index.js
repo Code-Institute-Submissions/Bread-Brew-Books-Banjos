@@ -85,21 +85,14 @@ function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     zoom: countries["all"].zoom,
     center: countries["all"].center,
-  //Optional Google Map code commented out for now
-  //mapTypeControl: false,
-   // panControl: false,
-    //zoomControl: false,
-    //streetViewControl: false,
-    //mapTypeId: "satellite",
   });
-    //map.setTilt(45);
-
 
   infoWindow = new google.maps.InfoWindow({
     content: document.getElementById("info-content"),
   });
 
   //Add type to selection or remove if selected already//
+  //Asssure that autocomplete has been initiated before running search//
 function addTypeToSelection () {
    selection = event.target.name;
    if (autocomplete.getPlace()) {
@@ -121,6 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
+ //Found and adapted code form Stack Overflow post - see Readme Hints section
 document.addEventListener('DOMContentLoaded', () => {
 
     let myBtns=document.querySelectorAll('.active-state__buttons');
@@ -162,8 +156,7 @@ types.forEach(element => element.addEventListener("click",addTypeToSelection));
 // When the user selects a city, get the place details for the city and
 // zoom the map in on the city.
 function onPlaceChanged() {
-    // not using $("#introModal").modal('hide');
-  const place = autocomplete.getPlace();
+    const place = autocomplete.getPlace();
 
   if (place.geometry) {
     map.panTo(place.geometry.location);
@@ -174,7 +167,7 @@ function onPlaceChanged() {
   }
 }
 
-// Search for selected-cat in the selected city, within the viewport of the map.
+// Search explicitly for one of our four types in the selected city, within the viewport of the map.
 function search() {
     if (selection != "cafe" && selection != "bakery" && selection != "book_store" && selection != "night_club") {
         return;

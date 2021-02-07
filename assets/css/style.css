@@ -52,8 +52,6 @@ line-height: 175%;
 .b4sub {
 font-weight: 600;
 line-height: 100%;
-padding-left: 15px;
-
 }
 
 /*-------------------------------------------------------- Modal*/
@@ -159,7 +157,7 @@ button:target{
   -webkit-box-flex: 1 1 190px;
   -ms-flex: 1 1 190px;
   flex: 1 1 190px;
-  margin: 0 8px;
+  margin: 0 4px;
 }
 
 #controls {

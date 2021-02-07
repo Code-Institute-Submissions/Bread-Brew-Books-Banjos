@@ -83,6 +83,20 @@ readme
 
 ## Debugging
 
+The initial plan was to ask user to choose a type and location on the modal. 
+However, the autocomplete function could not be re-used in two places, so I reconfigured back into the main app.
+
+The Google Places API defaulted to "lodging" type if a place was not specified
+Initially I thought that by restricting the search from occurring until after one of our four types, this could be avoided.
+I had this secondary step occurring in the modal initially, and then on index when modal was removed.
+I hid the city/country inputs until after a button had an active state.
+However, I was still seeing occassional "lodging" results.
+Upon investigation it was determined that this occurred when the selection had an "undefined" state - even though a button was active.
+
+I got advice from a former colleague that by restricting the search function to only the four keyword type I wanyed, this could be avoided.
+(cafe, bakery, book_store and night_club)
+
+
 ## Technologies Used
 
 * HTML and CSS programming languages
@@ -151,11 +165,11 @@ This was deployed on GitHub Pages and can be viewed at: <a href="https://charlie
 - Took advice from MS1 PREPARATION CALL pdf regarding Validation links
 
 #### Hints 
-- 
+- Took Add class to cicked buttons form Stack Overflow link <https://stackoverflow.com/questions/57143671/how-to-add-class-to-buttons-on-click/57143989>
 - 
 
 ### Acknowledgelmets
-* 
+* Ignatius and Damian
 
 ### Disclaimer
 This website was created for educational purposes only. 
