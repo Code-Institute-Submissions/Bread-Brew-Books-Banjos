@@ -67,6 +67,16 @@ font-size: 1.5em;
 line-height: 1em;
 }
 
+.modal-content {
+    padding: 20px;
+    margin: 4px;
+}
+
+.start {
+    font-size: 2em!important;
+    padding-top: 20px;
+}
+
 /*-------------------------------------------------------- Buttons*/
 
 .four-buttons {
