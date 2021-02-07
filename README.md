@@ -108,8 +108,6 @@ browsing some books and hearing live music were the top things to do. Also, Each
     - Upon investigation it was determined that this occurred when the selection had an "undefined" state - even though a button was active.
     - I got advice from a former colleague that by restricting the search function to only the four keyword type I wanyed, this could be avoided. (cafe, bakery, book_store and night_club)
 
-Allowed for zooming and used that feature as a suggestion for addressing null returns.
-
 ## Technologies Used
 
 * HTML and CSS programming languages
@@ -124,36 +122,36 @@ Allowed for zooming and used that feature as a suggestion for addressing null re
 * [Favicon.ico](https://favicon.io/favicon-converter/) - website for creating favicon 
 * [Google Places API](https://cloud.google.com/maps-platform/places/) - to access and retrieve results data from Google's millions of Place Locations
 * [Google Maps API](http://cloud.google.com/maps-platform/) - to display map
-* [Google Developer] (https://console.developers.google.com/) - to access Google APIs
+* [Google Developer](https://console.developers.google.com/) - to access Google APIs
 
 
 ## Testing
 
-- Modal
-    * Loaded page to test modal always appears
-    * Closed modal using X-button as well as Get Started Button
+- ## Modal
+    * Loaded page to test that modal always appears
+    * Tested that modal always closed using X-button and/or Get Started Button
 
-- Type Selection Buttons
-    * Clicked on each of the four type buttons to verify hover and active states appear
-    * Checked the selection return in Googe Chrome Console to assure that the appropriate selection type was being returned on click
+- ## Type Selection Buttons
+    * Clicked on each of the four Type buttons to verify the corresponding hover and active states always appear
+    * Checked selection returned in Googe Chrome Console to assure that the appropriate selection type alwaysreturned on click
 
-- City Search Field -
+- ## City Search Field -
     * Checked city autocomplete to verify functionality
     * Checked autocomplete in ALL COUNTRIES mode to assure that the country restrictions were not in effect
-    * Checked autocomplete in SPECIFIC COUNTRY mode to assure that the spedific country restriction WERE in effect
+    * Checked autocomplete in SPECIFIC COUNTRY mode to assure that the specific country restriction WERE in effect
 
-- Map Testing -
-    * Ran searches to assure the Map was drawing the correct coordinates
-    * Tested Map functionality to test zoom and scroll functionality
-    * Tested Google functionality including Street View and Full Screen 
+- ## Map Testing -
+    * Ran and re-ran searches to assure the Map was drawing the correct coordinates
+    * Tested Map functionality for zoom and scroll functionality
+    * Tested Google functionality including Street View and Full Screen Mode, with ESC to close
 
-- New Search with New coordinates
+- ## New Search with New coordinates
     * Zoomed and scrolled within Map, and re-ran searches to test Search function obeyed new coordinates
 
-- No Results -
-    * Tested specific locations which are known to lack Type Returns to test that the No Results message appeared
+- ## No Results -
+    * Tested specific locations/coordinates which are known to lack results to test that the No Results message always appeared
 
-- NEED TO TEST using:
+- CURRENTKY TESTING using:
     * Responsive devices on Google Developer Tools
     * iPhone 5S & 6 and iPad Pro
     * OSX Browsers: Chrome, Safari, Firefox, Opera, Edge
@@ -167,13 +165,13 @@ Allowed for zooming and used that feature as a suggestion for addressing null re
     * https://jigsaw.w3.org/css-validator/ -
     * https://jshint.com/ -
 
-## Known issues -
-    * There may be a browser/cache related issue where the website fails to return results on first attempt.
-    * Re-clicking the selected Type Button has always rectified the issue. Still, I would like to further debug this.
+- ## Known issues:
+    * There may be a browser/cache-related issue where the website fails to return results on the first attempt.
+    * A re-attempt click of the Type Button has always rectified the issue. Still, I would like to further debug this.
 
 ## Deployment
 
-This was deployed on GitHub Pages and can be viewed at: <a href="https://charliekranz.github.io/Bread-Brew-Books-Banjos/" target="_blank">https://charliekranz.github.io/Bread-Brew-Books-Banjos/</a>
+This WILL BE deployed on GitHub Pages and can be viewed at: <a href="https://charliekranz.github.io/Bread-Brew-Books-Banjos/" target="_blank">https://charliekranz.github.io/Bread-Brew-Books-Banjos/</a>
 
 * Before my mid-point meeting I deployed the website by:
     * Selecting the repository in GitHub account
@@ -182,14 +180,11 @@ This was deployed on GitHub Pages and can be viewed at: <a href="https://charlie
     * Clicked Save 
     * Shared the url of the published site
 
-## Credits
-
-### Content
-
 ### Code
-- <https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch#maps_places_autocomplete_hotelsearch-javascript> - Place Autocomplete Hotel Search as example of using API
+- <https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch#maps_places_autocomplete_hotelsearch-javascript> - Place Autocomplete Hotel Search as example of API implementation
 - <https://stackoverflow.com/questions/57143671/how-to-add-class-to-buttons-on-click/57143989> Button class js example
 - <https://getbootstrap.com/docs/4.0/components/modal/> Bootstrap Modal
+- 
 
 #### README
 - <https://github.com/Code-Institute-Solutions/readme-template/blob/master/README.md>
@@ -210,42 +205,11 @@ This was deployed on GitHub Pages and can be viewed at: <a href="https://charlie
 #### Hints 
 - Took Add class to cicked buttons example form Stack Overflow link <https://stackoverflow.com/questions/57143671/how-to-add-class-to-buttons-on-click/57143989> and also referred to
 <https://stackoverflow.com/questions/57143671/how-to-add-class-to-buttons-on-click/57143941>
-- 
+- Integrating Googel API - <https://developers.google.com/maps/documentation/javascript/adding-a-google-map#key>
 
 ### Acknowledgelments
-* My mentor Ignatius and my friend and former colleague Damian both offered encouragement, hints and insight
-* The Code Institute MS2 Example Project "Holiday Planner" by Ben Hasselgren served as an example of MS2 Project fulfillment.
+* My mentor Ignatius and my friend and former colleague Damian both offered encouragement, hints and great insight
+* The Code Institute MS2 Example Project "Holiday Planner" by Ben Hasselgren served as an example of using Google API for MS2 Project fulfillment
 
 ### Disclaimer
 This website was created for educational purposes only. 
-
-<https://developers.google.com/maps/documentation/javascript/adding-a-google-map#key>
-<https://www.tutorialrepublic.com/codelab.php?topic=faq&file=show-bootstrap-modal-on-page-load>
-
-
-
-
-need to adjust countries and categories
-set defaults to ireland
-expand country default locations
-add country maps
-
-try and filter out bookmakers, if I can integrate keyword
-need to add a modal for "no reults" and that clears the markers
-
-TESTING - hardcoded the Google Place keywords to determine they were correctly displaying by searching and checking that the returns represented the type used
-
-
-moved js to bottom of page and removed defer text
-
-show and hide modal <https://css-tricks.com/snippets/javascript/showhide-element/>
-
-Trying to hget button active to stay 
-- $(".four-buttons > .btn-lg").click(function(){
-    $(this).addClass("active").siblings().removeClass("active");
-});
-
-
-Future pla - code (place.website) so that it is dynamic and clickable
-
-need to check accessibility
