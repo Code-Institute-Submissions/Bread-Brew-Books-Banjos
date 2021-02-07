@@ -166,11 +166,11 @@ button:target{
 /*-------------------------------------------------------- Map*/
 
 #map {
-  height: 100vh;
-  position: relative;
+  height: 100%;
+  position: absolute;
   overflow: hidden;
   margin-top: 8px;
-  width: 100%;
+  width: 60%;
 }
 
 /*-------------------------------------------------------- Listing*/
@@ -183,10 +183,10 @@ table {
 #listing {
   position: relative;
   font-size: 1.2em;
-  width: 100%;
+  width: 40%;
   height: 100%;
   overflow: auto;
-  /*left: 62%;*/
+  left: 62%;
   margin-top: 6px;
   top: 0px;
   cursor: pointer;
