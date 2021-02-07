@@ -284,6 +284,19 @@ table {
     z-index: 1051 !important;
 }
 
+/*-------------------------------------------------------- Footer */
+
+.footer {
+    padding: 2em 0 3em;
+    background-color: #00a223;
+    color: #fff;
+}
+
+.footer-icon {
+    padding: .1em .4em .1em .4em;
+    color: #fff;
+}
+
 /*To be removed before submission*/
 
 /*.type-search-modal {
