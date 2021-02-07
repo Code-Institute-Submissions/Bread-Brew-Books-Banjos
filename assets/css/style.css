@@ -96,28 +96,17 @@ font-family: 'Poppins', sans-serif;
 
 }
 
-/*
-.btn-group-lg {
-margin: 0 3px 0 3px;
-min-width: 4.5em;
-border-radius: 3rem;
-border-bottom-style: dashed;
-}
-
-.btn {
-margin: 0 3px 0 3px;
-min-width: 4.5em;
-border-radius: 3rem;
-border-bottom-style: dashed;
-}
-*/
 
 button {
     width: inherit;
     font-size: 1.25em;
 }
 
-button:hover,
+button:hover {
+    background:fff#ffffff;
+    color: #7e7e7e;
+}
+
 button:focus,
 button:target{
     background:#00a223;
