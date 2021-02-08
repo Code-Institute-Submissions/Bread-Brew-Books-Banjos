@@ -22,6 +22,7 @@ p {
 }
 
 /*-------------------------------------------------------- Header */
+
 .btb-title {
     font-size: 2.5em;
     padding-top: .76em;
@@ -43,7 +44,6 @@ h1.btb-title {
     margin: 10px;
     display: contents;
 }
-
 
 .b4main {
     font-weight: 800;
