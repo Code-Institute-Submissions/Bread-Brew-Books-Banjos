@@ -38,6 +38,12 @@ h1.btb-title {
     }
 }
 
+@media only screen and (max-width: 375px) {
+h1.btb-title {
+    font-size: 2.25em;
+    }
+}
+
 @media only screen and (max-width: 300px) {
 h1.btb-title {
     font-size: 2em;
