@@ -154,12 +154,8 @@ button:target{
 /*-------------------------------------------------------- Search field and Dropdown*/ 
 
 .type-search {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     background: #fff;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: contents;
     left: 0;
     position: absolute;
@@ -170,15 +166,11 @@ button:target{
 }
 
 #locationField {
-    -webkit-box-flex: 1 1 190px;
-    -ms-flex: 1 1 190px;
     flex: 1 1 190px;
     margin: 0 4px;
 }
 
 #controls {
-    -webkit-box-flex: 1 1 140px;
-    -ms-flex: 1 1 140px;
     flex: 1 1 140px;
 }
 
@@ -267,7 +259,7 @@ button:target{
 
 #rating {
     font-size: 13px;
-    font-family: Arial Unicode MS;
+    font-family: "Arial Unicode MS";
 }
 
 .iw_table_row {

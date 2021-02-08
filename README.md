@@ -150,7 +150,7 @@ browsing some books and hearing live music were the top things to do. Also, Each
 - ## No Results -
     * Tested specific locations/coordinates which are known to lack results to test that the No Results message always appeared
 
-- CURRENTKY TESTING using:
+- CURRENTLY TESTING using:
     * Responsive devices on Google Developer Tools
     * iPhone 5S & 6 and iPad Pro
     * OSX Browsers: Chrome, Safari, Firefox, Opera, Edge
@@ -158,10 +158,10 @@ browsing some books and hearing live music were the top things to do. Also, Each
     (some styling yweaks still needed for Galaxy Fold)
 
 - NEED TO RE-TEST with validation checks - initial tests passed but code has been altered:
-    * https://validator.w3.org/ - 
-    * https://html5.validator.nu/ - 
-    * https://color.a11y.com/Contrast/ -
-    * https://jigsaw.w3.org/css-validator/ -
+    * https://validator.w3.org/ - No errors or warnings to show.
+    * https://html5.validator.nu/ - No errors or warnings to show.
+    * https://color.a11y.com/Contrast/ - No automated color contrast issues found on the webpage tested
+    * https://jigsaw.w3.org/css-validator/ - 2 errors and several warning but in Bootstrap CSS (https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css)
     * https://jshint.com/ - Only one issue reported, an unused variable initMap however I see that Google's own example code reports the same, so have left as is.
 
 - ## Known issues:
