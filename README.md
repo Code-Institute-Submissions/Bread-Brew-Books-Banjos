@@ -60,7 +60,7 @@ browsing some books and hearing live music were all contenders. Also, each of th
 
 - #### Wireframes
     - Wireframe 1: [View](https://charliekranz.github.io/Bread-Brew-Books-Banjos/assets/img/BBBB-wireframe-1.jpg)<br>
-    - Wireframe 2:  [View](https://charliekranz.github.io//workspace/Bread-Brew-Books-Banjos/assets/img/BBBB-wireframe-2.jpg)<br>
+    - Wireframe 2:  [View](https://charliekranz.github.io//Bread-Brew-Books-Banjos/assets/img/BBBB-wireframe-2.jpg)<br>
 
 ## Features
 
