@@ -59,8 +59,8 @@ browsing some books and hearing live music were all contenders. Also, each of th
     - Using the optional Google Map UI and layer options so user can opt to look at topography and Street View.
 
 - #### Wireframes
-    - 
-    -
+    - Wireframe 1: [View](https://charliekranz.github.io/Bread-Brew-Books-Banjos/assets/img/BBBB-wireframe-1.jpg)<br>
+    - Wireframe 2:  [View](https://charliekranz.github.io//workspace/Bread-Brew-Books-Banjos/assets/img/BBBB-wireframe-2.jpg)<br>
 
 ## Features
 
@@ -73,6 +73,9 @@ browsing some books and hearing live music were all contenders. Also, each of th
 * Map Markers - allow user to see more information on result including url hyperlink to website (if available)
 * Responsivity - Responsive across devices - allowing one and two column layouts
 * Google Map layers allows user to look at satelitte as well as simplified map view
+
+<img src="/assets/img/pop-up.jpg" >
+
 
 ## Features to be added 
 
