@@ -65,46 +65,45 @@ browsing some books and hearing live music were all contenders. Also, each of th
 ## Features
 
 * Intro Modal provides introduction, explaining the "pick a type" and "choose a location" steps.
-* Modal is easily x-ed out or skipped vis the Start Browsing button.
+* Modal is easily x-ed out or skipped via the Start Browsing button.
 * Header - Identity, Type Buttons and Search field with optional Country Drop Down
 * Country Dropdown allows for restricted city autocomplete by country
 * Map - default and dynamic states, user can zoom and search within Map
-* Search results - allow user to move to location by clicking on markers
-* Map Markers - allow user to see more information on result including url hyperlink to website (if available)
-* Responsivity - Responsive across devices - allowing one and two column layouts
-* Google Map layers allows user to look at satelitte as well as simplified map view
+* Listings results - allows user to move to location by clicking on markers
+* Map Markers - allows user to additional information including url hyperlink to website (if available)
+* Responsivity - Responsive across devices - allowing optimised one and two column layouts
+* Google Map layers allows user to look at satelitte and Street View as well as simplified map view
 
 <img src="/assets/img/pop-up.jpg" >
 
 
-## Features to be added 
+## Features which could be added 
 
-* Would like to develop branding and ideally bring the FontAwesome icons as makers onto maps
+* Would like to develop branding and ideally bring the FontAwesome icons as markers onto maps
 * Would also like to explore a four-color code, similar to initial wireframes
 * Refine some results - Google Places groups some establishments I'd rather filter out such as "bookmakers" for "book_stores"
-* Likewise would add explicit keywords to types and search function
+* Likewise would look at adding explicit/coded keywords to expand to type categories 
 * Would look at additional styling of map - https://mapstyle.withgoogle.com/
 * May also bring some Places Photos images into the results table, and/or on the Map Marker Info Boxes
+* Mult-language support
 * I would also like to return to looking at integrating the search and select functions into an introductory modal.
 
 ## Development history
-* I was intrigued by Google Places and Map API from the Code Institute module, however I found it difficult to integrate.
+* I was intrigued by Google Places and Map API from the Code Institute module, however I found it difficult to integrate
+initially. This project gave me ample opportunity to grapple with the Developer Console and Credentials and API key set-up and integration.
 * I knew the API would have some excellent functionality and a wealth of data to access, so I chose to go forward with it for my project.
 * Once I had the API working and results returning, I began to imagine a range of things I could do with it.
-* I was happy that the simplification of the search types still allowed for an interesting searching experience
+* I was happy that the simplification of the search types still allowed for an interesting searching experience. It truly
+is amazing how much data Googe has on offer. 
 
 ## Debugging
 
-* Autocomplete
-    - The initial plan was to ask user to choose a type and location on the modal. 
-    - However, the autocomplete function could not be re-used in two places, so I reconfigured back into the main app.
-
 * Undefined selection
     - The Google Places API defaulted to "lodging" type if a place was not specified
-    - Initially I thought that by restricting the search from occurring until after one of our four types, this could be avoided.
-    - I had this secondary step occurring in the modal initially, and then on index when modal was removed.
-    - I hid the city/country inputs until after a button had an active state.
-    - However, I was still seeing occasional "lodging" results.
+    - Initially I thought that by restricting the search from occurring until after a type was selected, that this could be avoided.
+    - I had this hidden as a conditional, secondary step occurring in the modal (initially) and then on website itself
+    - Once a category/type button had an active state, the city/country inputs appeared
+    - However, I was still seeing occasional "lodging" results even after these implementations.
     - Upon investigation it was determined that this occurred when the selection had an "undefined" state - even though a button was active.
     - I got advice from a former colleague that by restricting the search function to only the four keyword type I wanted, this could be avoided. (cafe, bakery, book_store and night_club)
 
@@ -118,48 +117,51 @@ browsing some books and hearing live music were all contenders. Also, each of th
 * [Bootstrap](https://getbootstrap.com/) - responsive sourcetoolkit with components and Javascipt plugins
 * [fontawesome](https://fontawesome.com/v4.7.0/) - vector icons customisable through CSS
 * [Google Fonts](https://fonts.google.com/) - open source web font collection
-* [Google Maps](https://www.google.com/maps) - online mapping resource with embed code
 * [Google Places API](https://cloud.google.com/maps-platform/places/) - to access and retrieve results data from Google's millions of Place Locations
 * [Google Maps API](http://cloud.google.com/maps-platform/) - to display map
 * [Google Developer](https://console.developers.google.com/) - to access Google APIs
+* [jQuery](https://jquery.com/) - add state to button
 
-
-## Testing
+## Testing 
 
 - ## Modal
     * Loaded page to test that modal always appears
     * Tested that modal always closed using X-button and/or Get Started Button
 
 - ## Type Selection Buttons
-    * Clicked on each of the four Type buttons to verify the corresponding hover and active states always appear
-    * Checked selection returned in Googe Chrome Console to assure that the appropriate selection type always returned on click
+    * Clicked on each of the four category / type buttons to verify the corresponding hover and active states always appeared
+    * Checked that Active State corresponded to the appropriate button clicked
+    * Checked selection returned in Googe Chrome Console to assure that the appropriate selection type was returned on click
 
 - ## City Search Field -
     * Checked city autocomplete to verify functionality
-    * Checked autocomplete in ALL COUNTRIES mode to assure that the country restrictions were not in effect
-    * Checked autocomplete in SPECIFIC COUNTRY mode to assure that the specific country restriction WERE in effect
+    * Checked autocomplete in ALL COUNTRIES mode to assure that the country restrictions did not come into effect
+    * Checked autocomplete in SPECIFIC COUNTRY mode to assure that the specific country restriction were in effect
 
 - ## Map Testing -
-    * Ran and re-ran searches to assure the Map was drawing the correct coordinates
+    * Ran searches to assure the Map was drawing the correctly specified coordinates
     * Tested Map functionality for zoom and scroll functionality
     * Tested Google functionality including Street View and Full Screen Mode, with ESC to close
 
 - ## New Search with New coordinates
     * Zoomed and scrolled within Map, and re-ran searches to test Search function obeyed new coordinates
 
+- ## Google Map UI Options
+    * Tested that satelitte, Street View and Full Screen modes worked
+
 - ## No Results -
-    * Tested specific locations/coordinates which are known to lack results to test that the No Results message always appeared
+    * Tested specific locations and coordinates which are known to lack specific category/type results to test that the No Results message always appeared
 
 - TESTED:
     * Responsive devices on Google Developer Tools
-    * iPhone 7
+    * iPhone 7, iPad Pro
     * OSX Browsers: Chrome, Safari
 
-- TESTED with validation checks - initial tests passed but code has been altered:
+- TESTED with validation checks:
     * https://validator.w3.org/ - No errors or warnings to show.
     * https://html5.validator.nu/ - No errors or warnings to show.
     * https://color.a11y.com/Contrast/ - No automated color contrast issues found on the webpage tested
-    * https://jigsaw.w3.org/css-validator/ - 2 errors and several warning but in Bootstrap CSS (https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css)
+    * https://jigsaw.w3.org/css-validator/ - 2 errors and several warning but all occuring in Bootstrap CSS (https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css)
     * https://jshint.com/ - Only one issue reported, an unused variable initMap however I see that Google's own example code reports the same, so have left as is.
 
 - ## Known issues:
@@ -168,9 +170,9 @@ browsing some books and hearing live music were all contenders. Also, each of th
 
 ## Deployment
 
-This WILL BE deployed on GitHub Pages and can be viewed at: <a href="https://charliekranz.github.io/Bread-Brew-Books-Banjos/" target="_blank">https://charliekranz.github.io/Bread-Brew-Books-Banjos/</a>
+Deployed on GitHub Pages and can be viewed at: <a href="https://charliekranz.github.io/Bread-Brew-Books-Banjos/" target="_blank">https://charliekranz.github.io/Bread-Brew-Books-Banjos/</a>
 
-* Before my mid-point meeting I deployed the website by:
+* I deployed the website by:
     * Selecting the repository in GitHub account
     * Clicked on Settings 
     * In GitHub Pages section, selected Master Branch as source
@@ -181,26 +183,21 @@ This WILL BE deployed on GitHub Pages and can be viewed at: <a href="https://cha
 - <https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch#maps_places_autocomplete_hotelsearch-javascript> - Place Autocomplete Hotel Search as example of API implementation
 - <https://stackoverflow.com/questions/57143671/how-to-add-class-to-buttons-on-click/57143989> Button class js example
 - <https://getbootstrap.com/docs/4.0/components/modal/> Bootstrap Modal
-- 
 
-#### README
+#### README Hints
 - <https://github.com/Code-Institute-Solutions/readme-template/blob/master/README.md>
 - <https://www.markdownguide.org/basic-syntax/>
 
-#### Bootstrap
+#### Bootstrap Hints
 - <https://getbootstrap.com/docs/4.4/layout/grid/>
 - <https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background>
 - <https://hackerthemes.com/bootstrap-cheatsheet/>
-
-#### Google Fonts
-- <https://www.gyanblog.com/gyan/how-to-use-google-fonts-website-bootstrap/>
-
 
 #### Validation Tips
 - Took advice from MS1 PREPARATION CALL pdf regarding Validation links
 
 #### Hints 
-- Took Add class to cicked buttons example form Stack Overflow link <https://stackoverflow.com/questions/57143671/how-to-add-class-to-buttons-on-click/57143989> and also referred to
+- I took Add class to cicked buttons example form Stack Overflow link <https://stackoverflow.com/questions/57143671/how-to-add-class-to-buttons-on-click/57143989> and also referred to
 <https://stackoverflow.com/questions/57143671/how-to-add-class-to-buttons-on-click/57143941>
 - Integrating Google API - <https://developers.google.com/maps/documentation/javascript/adding-a-google-map#key>
 
