@@ -1,4 +1,4 @@
-<img src="#">
+<img src="/workspace/Bread-Brew-Books-Banjos/assets/img/btb-examples.jpg">
 
 # <center>Browse the Best: Bread, Brew, Books and Banjos</center>
 
@@ -21,7 +21,7 @@ browsing some books and hearing live music were the top things to do. Also, Each
 - #### First Time Visitor Goals
     1. As a First Time Visitor, I want to clearly understand the outlay and functionality of the website.
     2. As a First Time Visitor, I want to be able to quickly modify my searches by category and place.
-    3. As a First Time Visitor, I want the UI to reflect my process and experience.
+    3. As a First Time Visitor, I want the UI to provide feedback reflecting my actions.
     4. As a First Time Visitor, I want to be able to search any city in the world without needing to use the Country filter dropdown.
     4. As a First Time Visitor, I want to have the option to delve further into the result specifics - website, locations, etc.
     5. As a First Time Visitor, I want to appreciate that the simplified process of Browse the Best offers ample information for
