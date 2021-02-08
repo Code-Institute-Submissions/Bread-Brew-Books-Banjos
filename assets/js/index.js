@@ -1,5 +1,10 @@
 // Modified Places Autocomplete Hotel Search sample from: https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch#maps_places_autocomplete_hotelsearch-javascript
+//Adding declarations for jshint//
 /*jshint sub:true*/
+/*jshint esversion: 6 */
+/*global google:false */
+/*globals $:false */
+
 let map;
 let places;
 let infoWindow;
@@ -83,7 +88,7 @@ const countries = {
 };
 
 //Call for Map
-function initMap() {
+function initMap() { 
   map = new google.maps.Map(document.getElementById("map"), {
     zoom: countries["all"].zoom,
     center: countries["all"].center,
@@ -124,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
 window.onload = function() {
 let types = document.querySelectorAll(".selected-cat");
 types.forEach(element => element.addEventListener("click",addTypeToSelection));
-}
+};
 
 // Create the autocomplete object and associate it with the UI input control.
 // Restrict the search to the default country, and to place type "cities".
