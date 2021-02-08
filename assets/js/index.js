@@ -240,7 +240,6 @@ function dropMarker(i) {
   };
 }
 
-
 //List Results
 function addResult(result, i) {
   const results = document.getElementById("results");
