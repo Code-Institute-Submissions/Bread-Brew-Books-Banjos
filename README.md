@@ -1,4 +1,4 @@
-<img src="/workspace/Bread-Brew-Books-Banjos/assets/img/btb-examples.jpg">
+<img src="https://charliekranz.github.io/Bread-Brew-Books-Banjos/assets/img/btb-examples.jpg">
 
 # <center>Browse the Best: Bread, Brew, Books and Banjos</center>
 
@@ -150,14 +150,12 @@ browsing some books and hearing live music were the top things to do. Also, Each
 - ## No Results -
     * Tested specific locations/coordinates which are known to lack results to test that the No Results message always appeared
 
-- CURRENTLY TESTING using:
+- TESED:
     * Responsive devices on Google Developer Tools
-    * iPhone 5S & 6 and iPad Pro
-    * OSX Browsers: Chrome, Safari, Firefox, Opera, Edge
-    * Windows Browsers: Chrome, Edge, Explorer, Firefox
-    (some styling yweaks still needed for Galaxy Fold)
+    * iPhone 7
+    * OSX Browsers: Chrome, Safari
 
-- NEED TO RE-TEST with validation checks - initial tests passed but code has been altered:
+- TESTED with validation checks - initial tests passed but code has been altered:
     * https://validator.w3.org/ - No errors or warnings to show.
     * https://html5.validator.nu/ - No errors or warnings to show.
     * https://color.a11y.com/Contrast/ - No automated color contrast issues found on the webpage tested
@@ -166,7 +164,7 @@ browsing some books and hearing live music were the top things to do. Also, Each
 
 - ## Known issues:
     * There may be a browser/cache-related issue where the website fails to return results on the first attempt.
-    * A re-attempt click of the Type Button has always rectified the issue. Still, I would like to further debug this.
+    * A re-run of the search has always rectified the issue. Still, I would like to further debug this.
 
 ## Deployment
 
