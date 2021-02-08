@@ -1,4 +1,5 @@
-    // Modified Places Autocomplete Hotel Search sample from: https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch#maps_places_autocomplete_hotelsearch-javascript
+// Modified Places Autocomplete Hotel Search sample from: https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch#maps_places_autocomplete_hotelsearch-javascript
+/*jshint sub:true*/
 let map;
 let places;
 let infoWindow;
@@ -8,12 +9,12 @@ let selection;
 let countryRestrict;
 let h3;
 
-    //Marker
+//Marker
 const MARKER_PATH =
     "https://developers.google.com/maps/documentation/javascript/images/marker_green";
 const hostnameRegexp = new RegExp("^https?://.+?/");
 
-    //Country List - Select Countries - Including a few countries beyond Google's suggested default list
+//Country List - Select Countries - Including a few countries beyond Google's suggested default list
 const countries = {
     all: {
         center: {lat: 15, lng: -25 },
@@ -81,7 +82,7 @@ const countries = {
     },
 };
 
-    //Call for Map
+//Call for Map
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     zoom: countries["all"].zoom,
@@ -92,8 +93,8 @@ function initMap() {
     content: document.getElementById("info-content"),
   });
 
-  //Add type to selection or remove if selected already//
-  //Asssure that autocomplete has been initiated before running search//
+//Add type to selection or remove if selected already//
+//Asssure that autocomplete has been initiated before running search//
 function addTypeToSelection () {
    selection = event.target.name;
    if (autocomplete.getPlace()) {
@@ -101,7 +102,7 @@ function addTypeToSelection () {
    }
 }
 
-    //Found and adapted code form Stack Overflow post - https://stackoverflow.com/questions/57143671/how-to-add-class-to-buttons-on-click/57143941
+//Found and adapted code form Stack Overflow post - https://stackoverflow.com/questions/57143671/how-to-add-class-to-buttons-on-click/57143941
 document.addEventListener('DOMContentLoaded', () => {
 
     let myBtns=document.querySelectorAll('.active-state__buttons');
@@ -114,19 +115,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-    //Show Modal function - https://getbootstrap.com/docs/4.0/components/modal/
+//Show Modal function - https://getbootstrap.com/docs/4.0/components/modal/
  $(document).ready(function(){
      $("#introModal").modal('show');
  });
 
-    //Adding selected category / type to selection
+//Adding selected category / type to selection
 window.onload = function() {
 let types = document.querySelectorAll(".selected-cat");
 types.forEach(element => element.addEventListener("click",addTypeToSelection));
 }
 
-  // Create the autocomplete object and associate it with the UI input control.
-  // Restrict the search to the default country, and to place type "cities".
+// Create the autocomplete object and associate it with the UI input control.
+// Restrict the search to the default country, and to place type "cities".
   autocomplete = new google.maps.places.Autocomplete(
     document.getElementById("autocomplete"),
     {
@@ -136,14 +137,14 @@ types.forEach(element => element.addEventListener("click",addTypeToSelection));
   );
   places = new google.maps.places.PlacesService(map);
   autocomplete.addListener("place_changed", onPlaceChanged);
-  // Add a DOM event listener to react when the user selects a country.
+// Add a DOM event listener to react when the user selects a country.
   document
     .getElementById("country")
     .addEventListener("change", setAutocompleteCountry);
 }
 
-    // When the user selects a city, get the place details for the city and
-    // zoom the map in on the city.
+// When the user selects a city, get the place details for the city and
+// zoom the map in on the city.
 function onPlaceChanged() {
     const place = autocomplete.getPlace();
 
@@ -170,26 +171,26 @@ function search() {
       clearResults();
       clearMarkers();
 
-      // Create a marker for each result found, and
-      // assign a letter of the alphabetic to each marker icon.
+// Create a marker for each result found, and
+// assign a letter of the alphabetic to each marker icon.
       for (let i = 0; i < results.length; i++) {
         const markerLetter = String.fromCharCode("A".charCodeAt(0) + (i % 26));
         const markerIcon = MARKER_PATH + markerLetter + ".png";
-        // Use marker animation to drop the icons incrementally on the map.
+// Use marker animation to drop the icons incrementally on the map.
         markers[i] = new google.maps.Marker({
           position: results[i].geometry.location,
           animation: google.maps.Animation.DROP,
           icon: markerIcon,
         });
-        // If the user clicks a marker, show the details of that result
-        // in an info window.
+// If the user clicks a marker, show the details of that result
+// in an info window.
         markers[i].placeResult = results[i];
         google.maps.event.addListener(markers[i], "click", showInfoWindow);
         setTimeout(dropMarker(i), i * 100);
         addResult(results[i], i);
     }
 
-      //Utilizing PlacesServiceStatus constant to print a message when no results are found.
+//Utilizing PlacesServiceStatus constant to print a message when no results are found.
          } else if (status === "ZERO_RESULTS") {
             clearResults();
             clearMarkers();
@@ -300,9 +301,9 @@ function buildIWContent(place) {
     document.getElementById("iw-phone-row").style.display = "none";
   }
 
-  // Assign a five-star rating to the result, using a black star ('&#10030;')
-  // to indicate the rating the result has earned, and a white star ('&#10025;')
-  // for the rating points not achieved.
+// Assign a five-star rating to the result, using a black star ('&#10030;')
+// to indicate the rating the result has earned, and a white star ('&#10025;')
+// for the rating points not achieved.
   if (place.rating) {
     let ratingHtml = "";
 
@@ -319,8 +320,8 @@ function buildIWContent(place) {
     document.getElementById("iw-rating-row").style.display = "none";
   }
 
-  // The regexp isolates the first part of the URL (domain plus subdomain)
-  // to give a short URL for displaying in the info window.
+// The regexp isolates the first part of the URL (domain plus subdomain)
+// to give a short URL for displaying in the info window.
   if (place.website) {
     let fullUrl = place.website;
     let website = String(hostnameRegexp.exec(place.website));
@@ -333,7 +334,6 @@ function buildIWContent(place) {
     document.getElementById("iw-website").textContent = website;
     document.getElementById("iw-website").innerHTML =
         '<u><a href="' + place.url + '">' + website + "</a></u>";
-        //, "_blank" trying to integrate new window _blank for urls
   } else {
     document.getElementById("iw-website-row").style.display = "none";
   }
