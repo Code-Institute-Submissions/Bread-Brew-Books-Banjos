@@ -7,11 +7,10 @@ and explore the four most important things you can do in a city - the 4 B’s: e
 read Books and hear Banjos* (*music may or may not include Banjos). :)
 
 Using the power of Google Places API, Browse the Best simplifies Place Searches functionality
-making the experience both **wide** — by allowing for a variety of activities and interests, but also **focused** 
-by limitting the scope to four basic things a visitor would likely be interested in.
+making the experience both **wide** — by allowing for a variety of activities and interests all across the world but also **focused** by limiting the scope to four basic things a visitor would likely be interested in.
 
-Essentially, I tried to think of the main things peole might like to do in a city and getting a coffee and a bite to eat,
-browsing some books and hearing live music were the top things to do. Also, Each of these categories/activities lend themselves to solo and group associations, further expanding the usefulness of the functionality.
+I considered the main things people often do in a city and: getting a coffee or a bite to eat,
+browsing some books and hearing live music were all contenders. Also, each of these categories/activities lend themselves to solo and group associations, further expanding the usefulness of the functionality.
 
 ***
 
@@ -29,19 +28,17 @@ browsing some books and hearing live music were the top things to do. Also, Each
 
  - #### Returning Visitor Goals
     1. As a Returning Visitor, I want to be able to perform searches quickly.
-    2. As a Returning Visitor, I want to be able to explore the world and learn about other cities offerings.
-    3. As a Returning Visitor, I want to be able to restricy city searches to specific countries, allowing me to explore regions and countries.
+    2. As a Returning Visitor, I want to be able to explore the world and learn about other cities' offerings.
+    3. As a Returning Visitor, I want to be able to restrict city searches to specific countries, allowing me to explore more specific regions and countries.
 
 - #### Frequent User Goals
     1. As a Frequent User, I want to be able to refer others to the website.
-    2. As a Frequent User, I want to appreciate that the simplified scope of Browse the Bests four place type categories offers a
-    full experience and allows me to imagine and plan enjoyable visits which
 
 ## Design
 
 - ### Branding 
-    - Alliteration of the B sound in both website name and the Search Options: Browse the Best, Bread, Brew, Books and Banjos
-    - Clean, simple - using iconography for the four categories
+    - Alliteration of the B sound in both website name and the Search Options: Bread, Brew, Books and Banjos
+    - Clear iconography for the four categories
 
 - ### Colours
     - Following the Green theme of the Google Places API, using green as the key Colour
@@ -49,17 +46,17 @@ browsing some books and hearing live music were the top things to do. Also, Each
 
 - ### UI
     - Clean, simple UI
-    - 2 column layout for Map and results on larger screens
-    - 1 column layout on smaller devices
+    - 2 column layout for side-by-side fuctionaity on larger screens
+    - 1 column layout on smaller devices, allowing a Map-first ordering
 
 - #### Typography
     - Poppins font for bolder, larger text
-    - Open Sans for body and smaller text.
-    - Sans Serif as the fallback if fonts aren't imported correctly.
+    - Open Sans for body and smaller text
+    - Sans Serif as the fallback
 
 - #### Imagery
-    - Google Maps provides literally a window to the world through the Map
-    - Using the optional Google Map UI and layer options so user can opt to look at topography
+    - Google Maps provides a literal window to the world through the Map
+    - Using the optional Google Map UI and layer options so user can opt to look at topography and Street View.
 
 - #### Wireframes
     - 
@@ -69,13 +66,13 @@ browsing some books and hearing live music were the top things to do. Also, Each
 
 * Intro Modal provides introduction, explaining the "pick a type" and "choose a location" steps.
 * Modal is easily x-ed out or skipped vis the Start Browsing button.
-* Header - Identity, Type Buttons and Search field with optiona Country Drop Down
+* Header - Identity, Type Buttons and Search field with optional Country Drop Down
 * Country Dropdown allows for restricted city autocomplete by country
 * Map - default and dynamic states, user can zoom and search within Map
 * Search results - allow user to move to location by clicking on markers
 * Map Markers - allow user to see more information on result including url hyperlink to website (if available)
 * Responsivity - Responsive across devices - allowing one and two column layouts
-* Google Map layers allows user to looka t satelitte as well as simplified map view
+* Google Map layers allows user to look at satelitte as well as simplified map view
 
 ## Features to be added 
 
@@ -104,9 +101,9 @@ browsing some books and hearing live music were the top things to do. Also, Each
     - Initially I thought that by restricting the search from occurring until after one of our four types, this could be avoided.
     - I had this secondary step occurring in the modal initially, and then on index when modal was removed.
     - I hid the city/country inputs until after a button had an active state.
-    - However, I was still seeing occassional "lodging" results.
+    - However, I was still seeing occasional "lodging" results.
     - Upon investigation it was determined that this occurred when the selection had an "undefined" state - even though a button was active.
-    - I got advice from a former colleague that by restricting the search function to only the four keyword type I wanyed, this could be avoided. (cafe, bakery, book_store and night_club)
+    - I got advice from a former colleague that by restricting the search function to only the four keyword type I wanted, this could be avoided. (cafe, bakery, book_store and night_club)
 
 ## Technologies Used
 
@@ -132,7 +129,7 @@ browsing some books and hearing live music were the top things to do. Also, Each
 
 - ## Type Selection Buttons
     * Clicked on each of the four Type buttons to verify the corresponding hover and active states always appear
-    * Checked selection returned in Googe Chrome Console to assure that the appropriate selection type alwaysreturned on click
+    * Checked selection returned in Googe Chrome Console to assure that the appropriate selection type always returned on click
 
 - ## City Search Field -
     * Checked city autocomplete to verify functionality
@@ -150,7 +147,7 @@ browsing some books and hearing live music were the top things to do. Also, Each
 - ## No Results -
     * Tested specific locations/coordinates which are known to lack results to test that the No Results message always appeared
 
-- TESED:
+- TESTED:
     * Responsive devices on Google Developer Tools
     * iPhone 7
     * OSX Browsers: Chrome, Safari
@@ -202,7 +199,7 @@ This WILL BE deployed on GitHub Pages and can be viewed at: <a href="https://cha
 #### Hints 
 - Took Add class to cicked buttons example form Stack Overflow link <https://stackoverflow.com/questions/57143671/how-to-add-class-to-buttons-on-click/57143989> and also referred to
 <https://stackoverflow.com/questions/57143671/how-to-add-class-to-buttons-on-click/57143941>
-- Integrating Googel API - <https://developers.google.com/maps/documentation/javascript/adding-a-google-map#key>
+- Integrating Google API - <https://developers.google.com/maps/documentation/javascript/adding-a-google-map#key>
 
 ### Acknowledgelments
 * My mentor Ignatius and my friend and former colleague Damian both offered encouragement, hints and great insight
