@@ -163,7 +163,7 @@ browsing some books and hearing live music were the top things to do. Also, Each
     * https://html5.validator.nu/ - 
     * https://color.a11y.com/Contrast/ -
     * https://jigsaw.w3.org/css-validator/ -
-    * https://jshint.com/ -
+    * https://jshint.com/ - Only one issue reported, an unused variable initMap however I see that Google's own example code reports the same, so have left as is.
 
 - ## Known issues:
     * There may be a browser/cache-related issue where the website fails to return results on the first attempt.
