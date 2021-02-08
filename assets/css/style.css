@@ -7,6 +7,10 @@ body {
     padding: 0;
 }
 
+input:focus, textarea:focus, select:focus{
+     outline: none!important;
+}
+
 /*-------------------------------------------------------- Fonts */
 
 h1,h2,h3 {
@@ -112,8 +116,7 @@ h1.btb-title {
 .btn-lg {
     margin: 0 0px 0 0px;
     min-width: 2em;
-    border-radius: 3rem;
-    border-bottom-style: dashed;
+    border-radius: 3rem!important;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -163,6 +166,10 @@ button:target{
     width: 90%;
     z-index: 1;
     min-height: 4em;
+}
+
+#searchfield {
+    background-color: #00a223;
 }
 
 #locationField {
