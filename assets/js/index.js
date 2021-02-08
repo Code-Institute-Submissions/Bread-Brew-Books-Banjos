@@ -6,6 +6,7 @@ let markers = [];
 let autocomplete;
 let selection;
 let countryRestrict;
+let h3;
 
     //Marker
 const MARKER_PATH =
